@@ -1,0 +1,454 @@
+2018-03-31 01:17:07.0116 INFO One Apple was created 
+2018-03-31 01:17:07.1058 INFO One Apple was created 
+2018-03-31 01:17:07.1058 INFO One Apple was created 
+2018-03-31 01:17:07.1224 INFO One Apple was created 
+2018-03-31 01:17:07.1224 INFO One Apple was created 
+2018-03-31 01:17:07.1359 INFO All Apples were created
+2018-03-31 01:17:07.1509 INFO One Enemey was created 
+2018-03-31 01:17:07.1509 INFO All Enemies were created
+2018-03-31 01:17:07.1674 INFO One Enemey was created 
+2018-03-31 01:17:07.1674 INFO All Enemies were created
+2018-03-31 01:17:07.1915 INFO One Enemey was created 
+2018-03-31 01:17:07.2035 INFO All Enemies were created
+2018-03-31 01:17:07.2205 INFO One Enemey was created 
+2018-03-31 01:17:07.2336 INFO All Enemies were created
+2018-03-31 01:17:07.2546 INFO One Enemey was created 
+2018-03-31 01:17:07.2676 INFO All Enemies were created
+2018-03-31 01:20:27.5359 INFO One Apple was created 
+2018-03-31 01:20:27.5710 INFO One Apple was created 
+2018-03-31 01:20:27.5710 INFO One Apple was created 
+2018-03-31 01:20:27.5710 INFO One Apple was created 
+2018-03-31 01:20:27.5710 INFO One Apple was created 
+2018-03-31 01:20:27.5881 INFO All Apples were created
+2018-03-31 01:20:27.5881 INFO One Enemey was created 
+2018-03-31 01:20:27.6022 INFO All Enemies were created
+2018-03-31 01:20:27.6022 INFO One Enemey was created 
+2018-03-31 01:20:27.6022 INFO All Enemies were created
+2018-03-31 01:20:27.6202 INFO One Enemey was created 
+2018-03-31 01:20:27.6202 INFO All Enemies were created
+2018-03-31 01:20:27.6202 INFO One Enemey was created 
+2018-03-31 01:20:27.6342 INFO All Enemies were created
+2018-03-31 01:20:27.6342 INFO One Enemey was created 
+2018-03-31 01:20:27.6342 INFO All Enemies were created
+2018-03-31 01:20:54.8969 INFO One Apple was created 
+2018-03-31 01:20:54.9328 INFO One Apple was created 
+2018-03-31 01:20:54.9328 INFO One Apple was created 
+2018-03-31 01:20:54.9328 INFO One Apple was created 
+2018-03-31 01:20:54.9478 INFO One Apple was created 
+2018-03-31 01:20:54.9478 INFO All Apples were created
+2018-03-31 01:20:54.9610 INFO One Enemey was created 
+2018-03-31 01:20:54.9610 INFO All Enemies were created
+2018-03-31 01:20:54.9610 INFO One Enemey was created 
+2018-03-31 01:20:54.9752 INFO All Enemies were created
+2018-03-31 01:20:54.9752 INFO One Enemey was created 
+2018-03-31 01:20:54.9942 INFO All Enemies were created
+2018-03-31 01:20:54.9942 INFO One Enemey was created 
+2018-03-31 01:20:55.0074 INFO All Enemies were created
+2018-03-31 01:20:55.0223 INFO One Enemey was created 
+2018-03-31 01:20:55.0223 INFO All Enemies were created
+2018-03-31 01:21:35.4974 INFO Try to find player  by predicate.
+2018-03-31 01:21:41.5902 INFO Try to find player  by predicate.
+2018-03-31 01:21:41.6283 INFO Try to find player  by predicate.
+2018-03-31 01:25:38.3164 INFO One Apple was created 
+2018-03-31 01:25:38.3725 INFO One Apple was created 
+2018-03-31 01:25:38.3725 INFO One Apple was created 
+2018-03-31 01:25:38.3866 INFO One Apple was created 
+2018-03-31 01:25:38.3866 INFO One Apple was created 
+2018-03-31 01:25:38.4008 INFO All Apples were created
+2018-03-31 01:25:38.4008 INFO One Enemey was created 
+2018-03-31 01:25:38.4167 INFO All Enemies were created
+2018-03-31 01:25:38.4167 INFO One Enemey was created 
+2018-03-31 01:25:38.4328 INFO All Enemies were created
+2018-03-31 01:25:38.4328 INFO One Enemey was created 
+2018-03-31 01:25:38.4477 INFO All Enemies were created
+2018-03-31 01:25:38.4477 INFO One Enemey was created 
+2018-03-31 01:25:38.4608 INFO All Enemies were created
+2018-03-31 01:25:38.4608 INFO One Enemey was created 
+2018-03-31 01:25:38.4608 INFO All Enemies were created
+2018-03-31 01:25:53.3511 INFO Additional plugin was loaded
+2018-03-31 01:26:24.7082 INFO Try to find player  by predicate.
+2018-03-31 01:26:27.1893 INFO Try to find player  by predicate.
+2018-03-31 01:26:27.2103 INFO Try to find player  by predicate.
+2018-03-31 01:26:29.8878 INFO The game is being launched
+2018-03-31 01:26:33.4278 INFO Try to update the Player
+2018-03-31 01:26:33.7105 INFO Player was updated
+2018-03-31 01:26:39.9935 INFO Additional plugin was loaded
+2018-03-31 01:26:39.9935 INFO The game is being launched
+2018-03-31 01:26:41.2769 INFO Try to update the Player
+2018-03-31 01:26:41.3354 INFO Player was updated
+2018-03-31 01:26:43.1929 INFO Additional plugin was loaded
+2018-03-31 01:26:43.2049 INFO The game is being launched
+2018-03-31 01:26:43.9326 INFO The game was stopped
+2018-03-31 01:26:45.7260 INFO The game is being launched
+2018-03-31 01:26:48.9695 INFO Try to update the Player
+2018-03-31 01:26:49.0306 INFO Player was updated
+2018-03-31 01:26:50.8237 INFO Additional plugin was loaded
+2018-03-31 01:26:50.8439 INFO The game is being launched
+2018-03-31 01:26:51.4975 INFO Try to update the Player
+2018-03-31 01:26:51.5657 INFO Player was updated
+2018-03-31 01:26:52.8814 INFO Additional plugin was loaded
+2018-03-31 01:26:52.8814 INFO The game is being launched
+2018-03-31 01:26:53.8006 INFO The game was stopped
+2018-03-31 01:26:54.5892 INFO One Apple was created 
+2018-03-31 01:26:54.6042 INFO One Apple was created 
+2018-03-31 01:26:54.6205 INFO One Apple was created 
+2018-03-31 01:26:54.6353 INFO One Apple was created 
+2018-03-31 01:26:54.6510 INFO One Apple was created 
+2018-03-31 01:26:54.6644 INFO All Apples were created
+2018-03-31 01:26:54.6834 INFO One Enemey was created 
+2018-03-31 01:26:54.6974 INFO All Enemies were created
+2018-03-31 01:26:54.7235 INFO One Enemey was created 
+2018-03-31 01:26:54.7396 INFO All Enemies were created
+2018-03-31 01:26:54.7596 INFO One Enemey was created 
+2018-03-31 01:26:54.7596 INFO All Enemies were created
+2018-03-31 01:26:54.7807 INFO One Enemey was created 
+2018-03-31 01:26:54.7887 INFO All Enemies were created
+2018-03-31 01:26:54.7887 INFO One Enemey was created 
+2018-03-31 01:26:54.8048 INFO All Enemies were created
+2018-03-31 01:26:55.9944 INFO The game is being launched
+2018-03-31 01:26:55.9944 INFO Start Game in the method Play()
+2018-03-31 01:27:03.8012 INFO The game is over.The player are looser.
+2018-03-31 01:27:03.8253 INFO Try to update the Player
+2018-03-31 01:27:03.8825 INFO Player was updated
+2018-03-31 01:27:04.9315 INFO One Apple was created 
+2018-03-31 01:27:04.9315 INFO One Apple was created 
+2018-03-31 01:27:04.9495 INFO One Apple was created 
+2018-03-31 01:27:04.9495 INFO One Apple was created 
+2018-03-31 01:27:04.9675 INFO One Apple was created 
+2018-03-31 01:27:04.9766 INFO All Apples were created
+2018-03-31 01:27:04.9766 INFO One Enemey was created 
+2018-03-31 01:27:04.9946 INFO All Enemies were created
+2018-03-31 01:27:04.9946 INFO One Enemey was created 
+2018-03-31 01:27:05.0117 INFO All Enemies were created
+2018-03-31 01:27:05.0117 INFO One Enemey was created 
+2018-03-31 01:27:05.0287 INFO All Enemies were created
+2018-03-31 01:27:05.0398 INFO One Enemey was created 
+2018-03-31 01:27:05.0398 INFO All Enemies were created
+2018-03-31 01:27:05.0568 INFO One Enemey was created 
+2018-03-31 01:27:05.0568 INFO All Enemies were created
+2018-03-31 01:27:05.0738 INFO The game is being launched
+2018-03-31 01:27:05.0738 INFO Start Game in the method Play()
+2018-03-31 01:27:10.2342 INFO The game is over.The player are looser.
+2018-03-31 01:27:10.2766 INFO Try to update the Player
+2018-03-31 01:27:10.3339 INFO Player was updated
+2018-03-31 01:27:12.6629 INFO One Apple was created 
+2018-03-31 01:27:12.6629 INFO One Apple was created 
+2018-03-31 01:27:12.6820 INFO One Apple was created 
+2018-03-31 01:27:12.6820 INFO One Apple was created 
+2018-03-31 01:27:12.7020 INFO One Apple was created 
+2018-03-31 01:27:12.7221 INFO All Apples were created
+2018-03-31 01:27:12.7442 INFO One Enemey was created 
+2018-03-31 01:27:12.7572 INFO All Enemies were created
+2018-03-31 01:27:12.7572 INFO One Enemey was created 
+2018-03-31 01:27:12.7782 INFO All Enemies were created
+2018-03-31 01:27:12.7923 INFO One Enemey was created 
+2018-03-31 01:27:12.8063 INFO All Enemies were created
+2018-03-31 01:27:12.8263 INFO One Enemey was created 
+2018-03-31 01:27:12.8414 INFO All Enemies were created
+2018-03-31 01:27:12.8605 INFO One Enemey was created 
+2018-03-31 01:27:12.8745 INFO All Enemies were created
+2018-03-31 01:27:12.8935 INFO The game is being launched
+2018-03-31 01:27:12.9006 INFO Start Game in the method Play()
+2018-03-31 01:27:14.5221 INFO The game is over.The player are looser.
+2018-03-31 01:27:14.5584 INFO Try to update the Player
+2018-03-31 01:27:14.6175 INFO Player was updated
+2018-03-31 01:27:16.2648 INFO One Apple was created 
+2018-03-31 01:27:16.2727 INFO One Apple was created 
+2018-03-31 01:27:16.2727 INFO One Apple was created 
+2018-03-31 01:27:16.2727 INFO One Apple was created 
+2018-03-31 01:27:16.2942 INFO One Apple was created 
+2018-03-31 01:27:16.2942 INFO All Apples were created
+2018-03-31 01:27:16.3139 INFO One Enemey was created 
+2018-03-31 01:27:16.3227 INFO All Enemies were created
+2018-03-31 01:27:16.3227 INFO One Enemey was created 
+2018-03-31 01:27:16.3227 INFO All Enemies were created
+2018-03-31 01:27:16.3449 INFO One Enemey was created 
+2018-03-31 01:27:16.3530 INFO All Enemies were created
+2018-03-31 01:27:16.3530 INFO All Enemies were created
+2018-03-31 01:27:16.3871 INFO One Enemey was created 
+2018-03-31 01:27:16.4011 INFO All Enemies were created
+2018-03-31 01:27:16.4263 INFO One Enemey was created 
+2018-03-31 01:27:16.4403 INFO All Enemies were created
+2018-03-31 01:27:16.4594 INFO The game is being launched
+2018-03-31 01:27:16.4671 INFO Start Game in the method Play()
+2018-03-31 01:27:47.7523 INFO The game is over.The player are winner.
+2018-03-31 01:27:47.7884 INFO Try to update the Player
+2018-03-31 01:27:47.8486 INFO Player was updated
+2018-03-31 18:49:14.5993 INFO One Apple was created 
+2018-03-31 18:49:14.6462 INFO One Apple was created 
+2018-03-31 18:49:14.6545 INFO One Apple was created 
+2018-03-31 18:49:14.6545 INFO One Apple was created 
+2018-03-31 18:49:14.6545 INFO One Apple was created 
+2018-03-31 18:49:14.6751 INFO All Apples were created
+2018-03-31 18:49:14.6890 INFO One Enemey was created 
+2018-03-31 18:49:14.6942 INFO All Enemies were created
+2018-03-31 18:49:14.6942 INFO One Enemey was created 
+2018-03-31 18:49:14.6942 INFO All Enemies were created
+2018-03-31 18:49:14.7146 INFO One Enemey was created 
+2018-03-31 18:49:14.7146 INFO All Enemies were created
+2018-03-31 18:49:14.7326 INFO One Enemey was created 
+2018-03-31 18:49:14.7448 INFO All Enemies were created
+2018-03-31 18:49:14.7648 INFO One Enemey was created 
+2018-03-31 18:49:14.7738 INFO All Enemies were created
+2018-03-31 18:49:18.7716 INFO Additional plugin was loaded
+2018-03-31 18:49:19.7241 INFO One Apple was created 
+2018-03-31 18:49:19.7431 INFO One Apple was created 
+2018-03-31 18:49:19.7582 INFO One Apple was created 
+2018-03-31 18:49:19.7732 INFO One Apple was created 
+2018-03-31 18:49:19.7882 INFO One Apple was created 
+2018-03-31 18:49:19.7882 INFO All Apples were created
+2018-03-31 18:49:19.8234 INFO One Enemey was created 
+2018-03-31 18:49:19.8374 INFO All Enemies were created
+2018-03-31 18:49:19.8594 INFO One Enemey was created 
+2018-03-31 18:49:19.8745 INFO All Enemies were created
+2018-03-31 18:49:19.8961 INFO One Enemey was created 
+2018-03-31 18:49:19.9106 INFO All Enemies were created
+2018-03-31 18:49:19.9306 INFO One Enemey was created 
+2018-03-31 18:49:19.9447 INFO All Enemies were created
+2018-03-31 18:49:19.9647 INFO One Enemey was created 
+2018-03-31 18:49:19.9791 INFO All Enemies were created
+2018-03-31 18:49:20.7896 INFO Additional plugin was loaded
+2018-03-31 18:49:21.6470 INFO One Apple was created 
+2018-03-31 18:49:21.6630 INFO One Apple was created 
+2018-03-31 18:49:21.6790 INFO One Apple was created 
+2018-03-31 18:49:21.6952 INFO One Apple was created 
+2018-03-31 18:49:21.7121 INFO One Apple was created 
+2018-03-31 18:49:21.7281 INFO All Apples were created
+2018-03-31 18:49:21.7502 INFO One Enemey was created 
+2018-03-31 18:49:21.7592 INFO All Enemies were created
+2018-03-31 18:49:21.7723 INFO One Enemey was created 
+2018-03-31 18:49:21.7723 INFO All Enemies were created
+2018-03-31 18:49:21.7943 INFO One Enemey was created 
+2018-03-31 18:49:21.7943 INFO All Enemies were created
+2018-03-31 18:49:21.8107 INFO All Enemies were created
+2018-03-31 18:49:21.8228 INFO One Enemey was created 
+2018-03-31 18:49:21.8228 INFO All Enemies were created
+2018-03-31 18:49:21.8428 INFO One Enemey was created 
+2018-03-31 18:49:21.8518 INFO All Enemies were created
+2018-03-31 18:49:22.6560 INFO Additional plugin was loaded
+2018-03-31 18:49:23.4570 INFO One Apple was created 
+2018-03-31 18:49:23.4729 INFO One Apple was created 
+2018-03-31 18:49:23.4886 INFO One Apple was created 
+2018-03-31 18:49:23.5046 INFO One Apple was created 
+2018-03-31 18:49:23.5196 INFO One Apple was created 
+2018-03-31 18:49:23.5347 INFO All Apples were created
+2018-03-31 18:49:23.5597 INFO One Enemey was created 
+2018-03-31 18:49:23.5748 INFO All Enemies were created
+2018-03-31 18:49:23.5959 INFO One Enemey was created 
+2018-03-31 18:49:23.6099 INFO All Enemies were created
+2018-03-31 18:49:23.6300 INFO One Enemey was created 
+2018-03-31 18:49:23.6440 INFO All Enemies were created
+2018-03-31 18:49:23.6621 INFO One Enemey was created 
+2018-03-31 18:49:23.6771 INFO All Enemies were created
+2018-03-31 18:49:23.7001 INFO One Enemey was created 
+2018-03-31 18:49:23.7142 INFO All Enemies were created
+2018-03-31 18:49:28.3215 INFO Try to find player  by predicate.
+2018-03-31 18:49:32.5864 INFO Try to find player  by predicate.
+2018-03-31 18:49:32.6124 INFO Try to find player  by predicate.
+2018-03-31 18:49:35.5994 INFO The game is being launched
+2018-03-31 18:49:35.6195 INFO Start Game in the method Play()
+2018-03-31 18:49:41.0957 INFO The game was stopped
+2018-03-31 18:49:41.4934 INFO The game is being launched
+2018-03-31 18:49:41.4934 INFO Start Game in the method Play()
+2018-03-31 18:49:44.0816 INFO The game is over.The player are looser.
+2018-03-31 18:49:44.1247 INFO Try to update the Player
+2018-03-31 18:49:44.4598 INFO Player was updated
+2018-03-31 18:49:45.1871 INFO One Apple was created 
+2018-03-31 18:49:45.1941 INFO One Apple was created 
+2018-03-31 18:49:45.1941 INFO One Apple was created 
+2018-03-31 18:49:45.2112 INFO One Apple was created 
+2018-03-31 18:49:45.2112 INFO One Apple was created 
+2018-03-31 18:49:45.2273 INFO All Apples were created
+2018-03-31 18:49:45.2273 INFO One Enemey was created 
+2018-03-31 18:49:45.2463 INFO All Enemies were created
+2018-03-31 18:49:45.2563 INFO One Enemey was created 
+2018-03-31 18:49:45.2563 INFO All Enemies were created
+2018-03-31 18:49:45.2895 INFO One Enemey was created 
+2018-03-31 18:49:45.3045 INFO All Enemies were created
+2018-03-31 18:49:45.3285 INFO One Enemey was created 
+2018-03-31 18:49:45.3445 INFO All Enemies were created
+2018-03-31 18:49:45.3659 INFO One Enemey was created 
+2018-03-31 18:49:45.3815 INFO All Enemies were created
+2018-03-31 18:49:45.4026 INFO The game is being launched
+2018-03-31 18:49:45.4026 INFO Start Game in the method Play()
+2018-03-31 18:49:47.1057 INFO The game was stopped
+2018-03-31 18:49:47.9781 INFO The game is being launched
+2018-03-31 18:49:47.9781 INFO Start Game in the method Play()
+2018-03-31 18:49:51.1944 INFO The game was stopped
+2018-03-31 18:49:52.0538 INFO The game is being launched
+2018-03-31 18:49:52.0538 INFO Start Game in the method Play()
+2018-03-31 18:49:54.8426 INFO The game is over.The player are looser.
+2018-03-31 18:49:54.8736 INFO Try to update the Player
+2018-03-31 18:49:54.9177 INFO Player was updated
+2018-03-31 18:49:55.8035 INFO One Apple was created 
+2018-03-31 18:49:55.8035 INFO One Apple was created 
+2018-03-31 18:49:55.8215 INFO One Apple was created 
+2018-03-31 18:49:55.8215 INFO One Apple was created 
+2018-03-31 18:49:55.8406 INFO One Apple was created 
+2018-03-31 18:49:55.8406 INFO All Apples were created
+2018-03-31 18:49:55.8616 INFO One Enemey was created 
+2018-03-31 18:49:55.8696 INFO All Enemies were created
+2018-03-31 18:49:55.8696 INFO One Enemey was created 
+2018-03-31 18:49:55.8957 INFO All Enemies were created
+2018-03-31 18:49:55.9158 INFO One Enemey was created 
+2018-03-31 18:49:55.9318 INFO All Enemies were created
+2018-03-31 18:49:55.9525 INFO One Enemey was created 
+2018-03-31 18:49:55.9681 INFO All Enemies were created
+2018-03-31 18:49:55.9920 INFO One Enemey was created 
+2018-03-31 18:49:56.0071 INFO All Enemies were created
+2018-03-31 18:49:56.0271 INFO The game is being launched
+2018-03-31 18:49:56.0271 INFO Start Game in the method Play()
+2018-03-31 18:56:37.9705 INFO One Apple was created 
+2018-03-31 18:56:38.0368 INFO One Apple was created 
+2018-03-31 18:56:38.0467 INFO One Apple was created 
+2018-03-31 18:56:38.0561 INFO One Apple was created 
+2018-03-31 18:56:38.0561 INFO One Apple was created 
+2018-03-31 18:56:38.0758 INFO All Apples were created
+2018-03-31 18:56:38.0928 INFO One Enemey was created 
+2018-03-31 18:56:38.1028 INFO All Enemies were created
+2018-03-31 18:56:38.1169 INFO One Enemey was created 
+2018-03-31 18:56:38.1169 INFO All Enemies were created
+2018-03-31 18:56:38.1390 INFO One Enemey was created 
+2018-03-31 18:56:38.1490 INFO All Enemies were created
+2018-03-31 18:56:38.1490 INFO All Enemies were created
+2018-03-31 18:56:38.1730 INFO One Enemey was created 
+2018-03-31 18:56:38.1841 INFO All Enemies were created
+2018-03-31 18:56:38.1981 INFO One Enemey was created 
+2018-03-31 18:56:38.1981 INFO All Enemies were created
+2018-03-31 18:56:42.7369 INFO Try to find player  by predicate.
+2018-03-31 18:56:47.1724 INFO Try to find player  by predicate.
+2018-03-31 18:56:47.1965 INFO Try to find player  by predicate.
+2018-03-31 18:56:50.2375 INFO Additional plugin was loaded
+2018-03-31 18:56:50.7272 INFO One Apple was created 
+2018-03-31 18:56:50.7272 INFO One Apple was created 
+2018-03-31 18:56:50.7272 INFO One Apple was created 
+2018-03-31 18:56:50.7473 INFO One Apple was created 
+2018-03-31 18:56:50.7574 INFO One Apple was created 
+2018-03-31 18:56:50.7574 INFO All Apples were created
+2018-03-31 18:56:50.7889 INFO One Enemey was created 
+2018-03-31 18:56:50.7889 INFO All Enemies were created
+2018-03-31 18:56:50.8185 INFO One Enemey was created 
+2018-03-31 18:56:50.8275 INFO All Enemies were created
+2018-03-31 18:56:50.8425 INFO One Enemey was created 
+2018-03-31 18:56:50.8515 INFO All Enemies were created
+2018-03-31 18:56:50.8515 INFO One Enemey was created 
+2018-03-31 18:56:50.8736 INFO All Enemies were created
+2018-03-31 18:56:50.8847 INFO One Enemey was created 
+2018-03-31 18:56:50.8847 INFO All Enemies were created
+2018-03-31 18:56:52.0475 INFO The game is being launched
+2018-03-31 18:56:52.0538 INFO Start Game in the method Play()
+2018-03-31 18:56:52.9003 INFO The game is over.The player are looser.
+2018-03-31 18:56:52.9405 INFO Try to update the Player
+2018-03-31 18:56:53.2412 INFO Player was updated
+2018-03-31 18:56:54.2470 INFO One Apple was created 
+2018-03-31 18:56:54.2470 INFO One Apple was created 
+2018-03-31 18:56:54.2591 INFO One Apple was created 
+2018-03-31 18:56:54.2591 INFO One Apple was created 
+2018-03-31 18:56:54.2742 INFO One Apple was created 
+2018-03-31 18:56:54.2742 INFO All Apples were created
+2018-03-31 18:56:54.2962 INFO One Enemey was created 
+2018-03-31 18:56:54.3052 INFO All Enemies were created
+2018-03-31 18:56:54.3052 INFO One Enemey was created 
+2018-03-31 18:56:54.3248 INFO All Enemies were created
+2018-03-31 18:56:54.3359 INFO One Enemey was created 
+2018-03-31 18:56:54.3359 INFO All Enemies were created
+2018-03-31 18:56:54.3549 INFO One Enemey was created 
+2018-03-31 18:56:54.3549 INFO All Enemies were created
+2018-03-31 18:56:54.3750 INFO One Enemey was created 
+2018-03-31 18:56:54.3840 INFO All Enemies were created
+2018-03-31 18:56:54.3840 INFO The game is being launched
+2018-03-31 18:56:54.3990 INFO Start Game in the method Play()
+2018-03-31 18:57:48.7785 INFO One Apple was created 
+2018-03-31 18:57:48.8187 INFO One Apple was created 
+2018-03-31 18:57:48.8247 INFO One Apple was created 
+2018-03-31 18:57:48.8247 INFO One Apple was created 
+2018-03-31 18:57:48.8359 INFO One Apple was created 
+2018-03-31 18:57:48.8359 INFO All Apples were created
+2018-03-31 18:57:48.8517 INFO One Enemey was created 
+2018-03-31 18:57:48.8517 INFO All Enemies were created
+2018-03-31 18:57:48.8517 INFO One Enemey was created 
+2018-03-31 18:57:48.8688 INFO All Enemies were created
+2018-03-31 18:57:48.8688 INFO One Enemey was created 
+2018-03-31 18:57:48.8818 INFO All Enemies were created
+2018-03-31 18:57:48.8818 INFO One Enemey was created 
+2018-03-31 18:57:48.8818 INFO All Enemies were created
+2018-03-31 18:57:48.8999 INFO One Enemey was created 
+2018-03-31 18:57:48.8999 INFO All Enemies were created
+2018-03-31 18:57:53.6856 INFO Try to find player  by predicate.
+2018-03-31 18:57:57.6682 INFO Try to find player  by predicate.
+2018-03-31 18:57:57.6872 INFO Try to find player  by predicate.
+2018-03-31 18:58:00.2696 INFO The game is being launched
+2018-03-31 18:58:00.2756 INFO Start Game in the method Play()
+2018-03-31 18:58:06.9736 INFO The game was stopped
+2018-03-31 18:58:07.4782 INFO The game is being launched
+2018-03-31 18:58:07.4782 INFO Start Game in the method Play()
+2018-03-31 18:58:13.1106 INFO The game is over.The player are looser.
+2018-03-31 18:58:13.2412 INFO Try to update the Player
+2018-03-31 18:58:13.5670 INFO Player was updated
+2018-03-31 18:58:41.6669 INFO One Apple was created 
+2018-03-31 18:58:41.7046 INFO One Apple was created 
+2018-03-31 18:58:41.7126 INFO One Apple was created 
+2018-03-31 18:58:41.7126 INFO One Apple was created 
+2018-03-31 18:58:41.7126 INFO One Apple was created 
+2018-03-31 18:58:41.7287 INFO All Apples were created
+2018-03-31 18:58:41.7287 INFO One Enemey was created 
+2018-03-31 18:58:41.7437 INFO All Enemies were created
+2018-03-31 18:58:41.7437 INFO One Enemey was created 
+2018-03-31 18:58:41.7565 INFO All Enemies were created
+2018-03-31 18:58:41.7565 INFO One Enemey was created 
+2018-03-31 18:58:41.7565 INFO All Enemies were created
+2018-03-31 18:58:41.7766 INFO One Enemey was created 
+2018-03-31 18:58:41.7766 INFO All Enemies were created
+2018-03-31 18:58:41.7891 INFO One Enemey was created 
+2018-03-31 18:58:41.7891 INFO All Enemies were created
+2018-03-31 18:58:46.7182 INFO Try to find player  by predicate.
+2018-03-31 18:58:50.6184 INFO Try to find player  by predicate.
+2018-03-31 18:58:50.6475 INFO Try to find player  by predicate.
+2018-03-31 18:58:53.1289 INFO The game is being launched
+2018-03-31 18:58:53.1360 INFO Start Game in the method Play()
+2018-03-31 19:00:32.4594 INFO One Apple was created 
+2018-03-31 19:00:32.5005 INFO One Apple was created 
+2018-03-31 19:00:32.5065 INFO One Apple was created 
+2018-03-31 19:00:32.5065 INFO One Apple was created 
+2018-03-31 19:00:32.5065 INFO One Apple was created 
+2018-03-31 19:00:32.5236 INFO All Apples were created
+2018-03-31 19:00:32.5236 INFO One Enemey was created 
+2018-03-31 19:00:32.5400 INFO All Enemies were created
+2018-03-31 19:00:32.5400 INFO One Enemey was created 
+2018-03-31 19:00:32.5400 INFO All Enemies were created
+2018-03-31 19:00:32.5607 INFO One Enemey was created 
+2018-03-31 19:00:32.5607 INFO All Enemies were created
+2018-03-31 19:00:32.5767 INFO One Enemey was created 
+2018-03-31 19:00:32.5767 INFO All Enemies were created
+2018-03-31 19:00:32.5912 INFO One Enemey was created 
+2018-03-31 19:00:32.6003 INFO All Enemies were created
+2018-03-31 19:01:05.2220 INFO One Apple was created 
+2018-03-31 19:01:05.2581 INFO One Apple was created 
+2018-03-31 19:01:05.2581 INFO One Apple was created 
+2018-03-31 19:01:05.2581 INFO One Apple was created 
+2018-03-31 19:01:05.2761 INFO One Apple was created 
+2018-03-31 19:01:05.2761 INFO All Apples were created
+2018-03-31 19:01:05.2912 INFO One Enemey was created 
+2018-03-31 19:01:05.2912 INFO All Enemies were created
+2018-03-31 19:01:05.3062 INFO One Enemey was created 
+2018-03-31 19:01:05.3062 INFO All Enemies were created
+2018-03-31 19:01:05.3203 INFO One Enemey was created 
+2018-03-31 19:01:05.3203 INFO All Enemies were created
+2018-03-31 19:01:05.3203 INFO One Enemey was created 
+2018-03-31 19:01:05.3373 INFO All Enemies were created
+2018-03-31 19:01:05.3373 INFO One Enemey was created 
+2018-03-31 19:01:05.3373 INFO All Enemies were created
+2018-03-31 19:01:09.7366 INFO Try to find player  by predicate.
+2018-03-31 19:01:13.6183 INFO Try to find player  by predicate.
+2018-03-31 19:01:13.6480 INFO Try to find player  by predicate.
+2018-03-31 19:01:16.5205 INFO The game is being launched
+2018-03-31 19:01:16.5256 INFO Start Game in the method Play()
+2018-03-31 19:01:31.8435 INFO The game was stopped
+2018-03-31 19:01:39.6768 INFO The game is being launched
+2018-03-31 19:01:39.6808 INFO Start Game in the method Play()
+2018-03-31 19:01:40.6113 INFO The game was stopped
+2018-03-31 19:01:41.9443 INFO The game is being launched
+2018-03-31 19:01:41.9443 INFO Start Game in the method Play()
+2018-03-31 19:01:43.2069 INFO The game is over.The player are looser.
+2018-03-31 19:01:43.2459 INFO Try to update the Player
+2018-03-31 19:01:43.5428 INFO Player was updated

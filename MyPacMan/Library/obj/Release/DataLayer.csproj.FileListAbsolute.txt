@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\Library.dll.config
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\Library.dll
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\Library.pdb
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\EntityFramework.dll
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\Models.dll
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\Models.pdb
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\EntityFramework.xml
+C:\Users\User\source\repos\MyPacMan\Library\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\MyPacMan\Library\obj\Release\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\MyPacMan\Library\obj\Release\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyPacMan\Library\obj\Release\Library.dll
+C:\Users\User\source\repos\MyPacMan\Library\obj\Release\Library.pdb

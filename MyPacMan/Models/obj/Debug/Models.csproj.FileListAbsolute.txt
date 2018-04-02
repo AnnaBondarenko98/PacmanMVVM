@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\MyPacMan\Models\obj\Debug\Models.Properties.Resource1.resources
+C:\Users\User\source\repos\MyPacMan\Models\obj\Debug\Models.csproj.GenerateResource.Cache
+C:\Users\User\source\repos\MyPacMan\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyPacMan\Models\bin\Debug\Models.dll
+C:\Users\User\source\repos\MyPacMan\Models\bin\Debug\Models.pdb
+C:\Users\User\source\repos\MyPacMan\Models\obj\Debug\Models.dll
+C:\Users\User\source\repos\MyPacMan\Models\obj\Debug\Models.pdb
+C:\Users\User\source\repos\MyPacMan\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\MyPacMan\Models\bin\Debug\NLog.dll
+C:\Users\User\source\repos\MyPacMan\Models\bin\Debug\NLog.xml

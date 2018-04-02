@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\MyPacMan.BLL.dll
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\MyPacMan.BLL.pdb
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Debug\MyPacMan.BLL.dll
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Debug\MyPacMan.BLL.pdb
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\Models.dll
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\Models.pdb
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\NLog.dll
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\NLog.xml

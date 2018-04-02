@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\Library.dll.config
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\Library.dll
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\Library.pdb
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\MyPacMan\Library\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyPacMan\Library\obj\Debug\Library.dll
+C:\Users\User\source\repos\MyPacMan\Library\obj\Debug\Library.pdb
+C:\Users\User\source\repos\MyPacMan\Library\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\NLog.dll
+C:\Users\User\source\repos\MyPacMan\Library\bin\Debug\NLog.xml

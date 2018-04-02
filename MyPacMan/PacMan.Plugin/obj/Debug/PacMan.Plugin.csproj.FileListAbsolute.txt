@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\bin\Debug\PacMan.Plugin.dll
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\bin\Debug\PacMan.Plugin.pdb
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\bin\Debug\MyPacMan.BLL.dll
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\bin\Debug\MyPacMan.BLL.pdb
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\obj\Debug\PacMan.Plugin.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\obj\Debug\PacMan.Plugin.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\obj\Debug\PacMan.Plugin.dll
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\obj\Debug\PacMan.Plugin.pdb
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\bin\Debug\Models.dll
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\bin\Debug\Models.pdb
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\bin\Debug\NLog.dll
+C:\Users\User\source\repos\MyPacMan\PacMan.Plugin\bin\Debug\NLog.xml

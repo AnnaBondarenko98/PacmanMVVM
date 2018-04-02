@@ -1,0 +1,5 @@
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\PacMan.Plugin\bin\Debug\PacMan.Plugin.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\PacMan.Plugin\bin\Debug\PacMan.Plugin.pdb
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\PacMan.Plugin\Debug\PacMan.Plugin.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\PacMan.Plugin\Debug\PacMan.Plugin.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\PacMan.Plugin\Debug\PacMan.Plugin.pdb

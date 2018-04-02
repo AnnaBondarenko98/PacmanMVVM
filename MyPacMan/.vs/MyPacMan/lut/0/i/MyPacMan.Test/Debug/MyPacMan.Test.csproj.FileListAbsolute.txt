@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.Test\bin\Debug\MyPacMan.Test.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.Test\bin\Debug\MyPacMan.Test.pdb
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\MyPacMan.Test\Debug\MyPacMan.Test.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\MyPacMan.Test\Debug\MyPacMan.Test.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\MyPacMan.Test\Debug\MyPacMan.Test.dll
+C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\MyPacMan.Test\Debug\MyPacMan.Test.pdb

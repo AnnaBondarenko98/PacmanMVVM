@@ -1,0 +1,8 @@
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Release\MyPacMan.BLL.dll
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Release\MyPacMan.BLL.pdb
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Release\LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Release\MyPacMan.BLL.Properties.Resource1.resources
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Release\LogicLayer.csproj.GenerateResource.Cache
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Release\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Release\MyPacMan.BLL.dll
+C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\obj\Release\MyPacMan.BLL.pdb
