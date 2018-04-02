@@ -8,3 +8,13 @@ C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\Models.dll
 C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\Models.pdb
 C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\NLog.dll
 C:\Users\User\source\repos\MyPacMan\MyPacMan.BLL\bin\Debug\NLog.xml
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\bin\Debug\MyPacMan.BLL.dll
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\bin\Debug\MyPacMan.BLL.pdb
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\bin\Debug\Models.dll
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\bin\Debug\NLog.dll
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\bin\Debug\Models.pdb
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\bin\Debug\NLog.xml
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\obj\Debug\MyPacMan.BLL.dll
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan.BLL\obj\Debug\MyPacMan.BLL.pdb

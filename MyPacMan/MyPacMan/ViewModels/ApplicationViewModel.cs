@@ -265,6 +265,7 @@ namespace MyPacMan.ViewModels
             gamePlaying = new GamePlaying(250, 5, 5, 40);
             check = new CheckBox();
             currentWindow = window;
+            repos.PlayerRep.Get(0);
             
         }
         /// <summary>
