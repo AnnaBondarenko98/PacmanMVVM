@@ -6,18 +6,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:local="clr-namespace:MyPacMan"
-        mc:Ignorable="d"
+        xmlns:l="clr-namespace:Localizator;assembly=Localizator"
+       
+        ResizeMode="NoResize"
         Title="MainWindow" Height="434.5" Width="626" >
-    <Grid Margin="0,0,3.333,51.333" RenderTransformOrigin="0.448,0.585" >
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
+        <l:LocalisationHelper x:Key="Helper"></l:LocalisationHelper>
+    </Window.Resources>
+    <Grid Name="MyGrid" Margin="0,0,4.667,51.667" RenderTransformOrigin="0.448,0.585" >
         <ToolBar x:Name="MainMenuToolBar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="616" Background="Yellow">
-            <Button Content="Show Records" x:Name="TopPlayersButton" Width="100" Height="22" Command="{Binding Path=TopPlayersCommand}" Margin="0,-1,0,-1.8"/>
-        </ToolBar>
-        <TextBox Name ="NameTextBox" Text="{Binding  Path=[Player.Name]}" HorizontalAlignment="Left" Height="23" Margin="192,44,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <Label Content="Enter your name" HorizontalAlignment="Left" Margin="69,41,0,0" VerticalAlignment="Top"/>
-        <Button Content="Apply" x:Name="NewPlayerButton" Command="{Binding Path=NewPlayerCommand}"   CommandParameter="{Binding ElementName=NameTextBox }" Margin="346,44,161,277" RenderTransformOrigin="0.503,0.848"/>
+            <Button Content="{Binding Source={StaticResource Helper}, Path=[MainResources.TopPlayersButton]}" x:Name="TopPlayersButton" Width="100" Height="22" Command="{Binding Path=TopPlayersCommand}" Margin="0,-1,0,-1.8"/>
+            <Button Content="{Binding Source={StaticResource Helper}, Path=[MainResources.PluginButton]}" x:Name="PluginButton" Width="100" Height="22" Command="{Binding Path=CheckHardGame}"  CommandParameter="{Binding ElementName=PluginButton }" Margin="0,-1,0,-1.8"/>
 
-
-        <local:MyCanvas x:Name="Canvas" Margin="140,82,223,25" Background="Green"  >
+    </ToolBar>
+        <Menu x:Name="MyMenu" Height="21" VerticalAlignment="Top" Width="145" Background="Yellow" Margin="461,1,10,0">
+            <MenuItem Name="MyMenuItem" Header="{Binding [MainResources.Language_Btn], Source={StaticResource Helper}}" Height="22" Margin="0">
+                <MenuItem Header="Русский" Command="{Binding RussianCommand}"/>
+                <MenuItem Header="English" Command="{Binding EnglishCommand}"/>
+            </MenuItem>
+        </Menu>
+        
+        <local:MyCanvas x:Name="Canvas" Margin="140,82,223.334,10.334" Background="Green"  >
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Loaded">
                     <i:InvokeCommandAction Command="{Binding Path=CanvasLoadedCommand, UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding ElementName=Canvas }" ></i:InvokeCommandAction>
@@ -25,9 +35,12 @@
 
             </i:Interaction.Triggers>
         </local:MyCanvas>
-        <Button Content="Start/Stop" Name="StartButton" HorizontalAlignment="Left" Margin="24,106,0,0" VerticalAlignment="Top" Width="75"  Command="{Binding Path=PlayCommand}"  CommandParameter="{Binding ElementName=NameTextBox }"/>
-        <CheckBox  Name ="Check" Content="Hard game" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top"  Command="{Binding Path=CheckHardGame}" CommandParameter="{Binding ElementName=Check }"/>
-        
+        <Button Content="{Binding Source={StaticResource Helper}, Path=[MainResources.StartButton]}" Name="StartButton" HorizontalAlignment="Left" Margin="24,106,0,0" VerticalAlignment="Top" Width="75"  Command="{Binding Path=PlayCommand}"  CommandParameter="{Binding ElementName=NameTextBox }"/>
+        <Label Name="LifeTitle" Content="{Binding Source={StaticResource Helper}, Path=[MainResources.LifeTitle]}" HorizontalAlignment="Left" Margin="400,108,0,0" VerticalAlignment="Top"/>
+        <Label Name="lifeLabel" Content="{Binding Path=LifesCount}" HorizontalAlignment="Left" Margin="506,106,0,0" VerticalAlignment="Top"/>
+        <Label  Name="TimeLabel" Content="{}" HorizontalAlignment="Left" Margin="417,191,0,0" VerticalAlignment="Top"/>
+        <Label  Name="TimeLimit" Content="{Binding Source={StaticResource Helper}, Path=[MainResources.TimeLimit]}" HorizontalAlignment="Left" Margin="399,146,0,0" VerticalAlignment="Top"/>
+
     </Grid>
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="KeyDown">

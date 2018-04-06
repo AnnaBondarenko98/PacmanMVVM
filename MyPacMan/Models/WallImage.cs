@@ -17,9 +17,9 @@ namespace Models
         Int32Rect.Empty,
         BitmapSizeOptions.FromEmptyOptions());
         /// <summary>
-        /// Gets  image
+        /// Gets or sets image
         /// </summary>
-        public ImageSource StoneImg { get; }
+        public ImageSource StoneImg { get; set; }
 
     }
 }

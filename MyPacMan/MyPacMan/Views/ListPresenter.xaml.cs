@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyPacMan.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace MyPacMan.Views
     /// </summary>
     public partial class ListPresenter : Window
     {
+       
         public ListPresenter()
         {
             InitializeComponent();

@@ -1,29 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections;
 using System.ComponentModel;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using System.Windows.Input;
-using System.Windows.Media;
-using Brushes = System.Windows.Media.Brushes;
 using MessageBox = System.Windows.MessageBox;
-using Point = System.Windows.Point;
-using Rectangle = System.Windows.Shapes.Rectangle;
 using System.Threading;
 using Library.Repositories;
 using Library.Entities;
-using System.Windows.Media.Imaging;
 using MyPacMan.BLL;
 using System.Windows.Threading;
 using MyPacMan.BLL.Interfaces;
 
 using System.Reflection;
+using Models;
 using NLog;
+using Xceed.Wpf.AvalonDock.Controls;
+using Localizator;
+using MyPacMan.Views;
 
 namespace MyPacMan.ViewModels
 {
@@ -36,17 +32,37 @@ namespace MyPacMan.ViewModels
         IGamePlaying gamePlaying;
         Thread thread;
         private DispatcherTimer timer;
+        private DispatcherTimer timer2;
         MyCanvas currentCanvas;
         Window currentWindow;
         bool IsGameLoad = false;
-        CheckBox check;
+        Button check;
         TextBox start;
+        private Menu menu;
+        public int lifesCount = 3;
         private static Logger logger = LogManager.GetCurrentClassLogger();
         private static Logger updateLogger = LogManager.GetLogger("UpdateLogger");
-
+        private Random random;
+        private List<Wall> walls = new List<Wall>();
+        private DateTime date;
+        private DateTime currdate;
+        private Window register;
+        public int LifesCount { get => lifesCount; set => lifesCount = value; }
+        public DateTime Date { get => date; set => date = value; }
         #endregion
 
         #region Commands
+
+        /// <summary>
+        /// Returns or sets command for change language to russian
+        /// </summary>
+        public ICommand RussianCommand { get; set; }
+
+        /// <summary>
+        /// Returns or sets command for change language to english
+        /// </summary>
+        public ICommand EnglishCommand { get; set; }
+
         /// <summary>
         /// Returns or sets a command that checks CheckBox 
         /// </summary>
@@ -58,49 +74,88 @@ namespace MyPacMan.ViewModels
                 return checkHardGame ??
                   (checkHardGame = new ClassCommand(obj =>
                   {
-                      check = obj as CheckBox;
-                      if (check.IsChecked == true)
+                      check = obj as Button;
+
+
+                      var fullpath = AppDomain.CurrentDomain.BaseDirectory;
+
+                      var dllPath = string.Empty;
+                      if (fullpath.Contains(@"MyPacMan\bin\Debug\"))
                       {
-                          var fullpath = AppDomain.CurrentDomain.BaseDirectory;
-
-                          var dllPath = string.Empty;
-
-                          if (fullpath.Contains(@"MyPacMan\bin\Debug\"))
-                          {
-                              dllPath = fullpath.Replace(@"MyPacMan\bin\Debug\", @"Plugins\PacMan.Plugin.dll");
-                          }
-                          else if (fullpath.Contains(@"MyPacMan\bin\Release\"))
-                          {
-                              dllPath = fullpath.Replace(@"MyPacMan\bin\Release\", @"Plugins\PacMan.Plugin.dll");
-                          }
-                          var pluginAssembly = Assembly.LoadFrom(dllPath);
+                          dllPath = fullpath.Replace(@"MyPacMan\bin\Debug\", @"MyPacMan\bin\Plugins");
+                      }
+                      else if (fullpath.Contains(@"MyPacMan\bin\Release\"))
+                      {
+                          dllPath = fullpath.Replace(@"MyPacMan\bin\Release\", @"MyPacMan\bin\Plugins");
+                      }
 
 
-                          foreach (var plugin in pluginAssembly.GetTypes())
+                      DirectoryInfo info = new DirectoryInfo(dllPath);
+
+                      FileInfo[] files = info.GetFiles();
+                      List<Assembly> pluginAssemblies = new List<Assembly>();
+                      foreach (var file in files)
+                      {
+                          pluginAssemblies.Add(Assembly.LoadFrom(file.FullName));
+                      }
+
+                          ;
+                      Window window;
+
+                      window = new PluginPresenter();
+
+                      var listView = (ListView)window.Content;
+                      listView.ItemsSource = pluginAssemblies;
+                      Assembly selectedAssembly;
+                      listView.SelectionChanged += (o, e) =>
+                      {
+                          ListView l = o as ListView;
+                          selectedAssembly = l.SelectedItem as Assembly;
+                          foreach (var plugin in selectedAssembly.GetTypes())
                           {
                               if (plugin.BaseType != null)
 
-                                  gamePlaying = (IGamePlaying)Activator.CreateInstance(plugin, new object[] { 250, 10, 10, 20 });
+                                  gamePlaying = (IGamePlaying)Activator.CreateInstance(plugin);
                               logger.Info("Additional plugin was loaded");
                           }
                           currentCanvas.Children.Clear();
                           IsGameLoad = false;
 
                           CanvasLoadedCommand.Execute(currentCanvas);
-                         
-                         
+                          window.Close();
 
-                      }
-                      else
-                      {
-                          gamePlaying = new GamePlaying(250, 5, 5, 40);
-                          currentCanvas.Children.Clear();
-                          IsGameLoad = false;
-                          CanvasLoadedCommand.Execute(currentCanvas);
-                         
+                      };
+                      listView.Items.Refresh();
+                      window.ShowDialog();
+
+                      //Assembly pluginAssembly=null;
+                      //foreach (var file in files)
+                      //{
+                      //    pluginAssembly = Assembly.LoadFrom(file.FullName);
+                      //}
 
 
-                      }
+
+
+                      //foreach (var plugin in pluginAssembly.GetTypes())
+                      //{
+                      //    if (plugin.BaseType != null)
+
+                      //        gamePlaying = (IGamePlaying)Activator.CreateInstance(plugin, new object[] { 250, 8, 8, 30 });
+                      //    logger.Info("Additional plugin was loaded");
+                      //}
+                      //currentCanvas.Children.Clear();
+                      //IsGameLoad = false;
+
+                      //CanvasLoadedCommand.Execute(currentCanvas);
+
+
+
+
+
+
+
+
 
 
                   }));
@@ -137,6 +192,8 @@ namespace MyPacMan.ViewModels
                   {
 
                       TextBox text = obj as TextBox;
+                      start = obj as TextBox;
+
                       if ((text.Text != "" && text.Text != null) && repos.PlayerRep.FindByPred(c => c.Name == text.Text).Count() == 0)
                       {
                           current = new Player();
@@ -155,7 +212,7 @@ namespace MyPacMan.ViewModels
                           MessageBox.Show("Entrer your last name or create new!");
                       }
 
-
+                      register.Close();
 
 
                   }));
@@ -177,9 +234,9 @@ namespace MyPacMan.ViewModels
 
                       currentCanvas = obj as MyCanvas;
 
-
-                      Display(currentCanvas);
                       DrawWall(currentCanvas);
+                      Display(currentCanvas);
+
                       IsGameLoad = true;
 
 
@@ -199,7 +256,7 @@ namespace MyPacMan.ViewModels
                   (playCommand = new ClassCommand(obj =>
 
                   {
-                       if(start==null) start = obj as TextBox;
+                      if (start == null) start = obj as TextBox;
                       if (current.Name != null && current.Name != "")
                       {
                           if (gamePlaying.Status == GameStatus.playing)
@@ -208,6 +265,7 @@ namespace MyPacMan.ViewModels
                               thread.Abort();
                               gamePlaying.Status = GameStatus.stopping;
                               this.timer.Stop();
+                              menu.IsEnabled = true;
                               check.IsEnabled = true;
                               start.Focusable = true;
                               logger.Info("The game was stopped");
@@ -216,6 +274,7 @@ namespace MyPacMan.ViewModels
                           {
 
 
+                              menu.IsEnabled = false;
                               check.IsEnabled = false;
                               gamePlaying.Status = GameStatus.playing;
                               StartGame();
@@ -223,13 +282,21 @@ namespace MyPacMan.ViewModels
                               thread.Start();
                               logger.Info("The game is being launched");
                               start.Focusable = false;
-
+                              IEnumerable<Label> l = currentWindow.FindVisualChildren<Label>();
+                              foreach (var lab in l)
+                              {
+                                  if (lab.Name == "lifeLabel") lab.Content = lifesCount;
+                              }
 
                           }
                       }
                       else
                       {
-                          MessageBox.Show("Entrer your last name or create new!");
+                          // MessageBox.Show("Entrer your last name or create new!");
+                          register = new Register();
+                          register.Show();
+
+
                       }
 
 
@@ -257,32 +324,74 @@ namespace MyPacMan.ViewModels
         ///  Initialize new instance of the <see cref="ApplicationViewModel" /> class
         /// </summary>
         /// <param name="window"></param>
-        public ApplicationViewModel(Window window)
+        public ApplicationViewModel(Window window, Menu m)
         {
+            menu = m;
+            register = new Window();
             currentWindow = window;
             repos = new UnitOfRepository("MyDB");
             current = new Player();
             gamePlaying = new GamePlaying(250, 5, 5, 40);
-            check = new CheckBox();
+            check = new Button();
             currentWindow = window;
             repos.PlayerRep.Get(0);
-            
+            random = new Random();
+            date = new DateTime(0);
+            currdate = new DateTime(0).AddMinutes(5);
+            this.timer2 = new DispatcherTimer();
+            this.timer2.Interval = TimeSpan.FromSeconds(1);
+            this.timer2.Tick += this.Tick;
+            RussianCommand = new ClassCommand(Russian);
+            EnglishCommand = new ClassCommand(English);
+            ResourceManagerService.RegisterManager("MainResources", MainResources.ResourceManager, true);
+
+        }
+        private void Russian(object obj)
+        {
+
+            ResourceManagerService.ChangeLocale("ru-RU");
+
+        }
+
+        private void English(object obj)
+        {
+
+            ResourceManagerService.ChangeLocale("en-US");
         }
         /// <summary>
         /// Runs the instance of  <see cref="Timer" />
         /// </summary>
         public void StartGame()
         {
-            //if(  this.timer!=null) this.timer.Dispatcher.BeginInvokeShutdown(DispatcherPriority.Send);
+
             this.timer = new DispatcherTimer();
             this.timer.Interval = TimeSpan.FromMilliseconds(10);
             this.timer.Tick += this.GameLoop;
             this.timer.Start();
+            this.timer2.Start();
+
+        }
+        private void Tick(object sender, EventArgs e)
+        {
+
+            date = date.AddSeconds(1);
+
 
         }
 
         private void GameLoop(object sender, EventArgs e)
         {
+
+            IEnumerable<Label> l = currentWindow.FindVisualChildren<Label>();
+            foreach (var lab in l)
+            {
+                if (lab.Name == "TimeLabel") lab.Content = date.Minute + " " + date.Second;
+            }
+            if (currdate.Minute - date.Minute == 0)
+            {
+                gamePlaying.Status = GameStatus.looser;
+                this.timer2.Stop();
+            }
             Display(currentCanvas);
         }
         /// <summary>
@@ -297,51 +406,269 @@ namespace MyPacMan.ViewModels
                 DrawEnemey(canvas);
                 DrawPacman(canvas);
             }
-            else
+            else if (gamePlaying.Status == GameStatus.winner)
             {
-                //gamePlaying.status = GameStatus.playing;
-                //  PlayCommand.Execute(new object());
-                // timer.Dispatcher.BeginInvokeShutdown(DispatcherPriority.Send);
-
                 thread.Abort();
                 timer.Stop();
-                current.Record = gamePlaying.CollectedApple;
+                if (current.Record < GamePlaying.CustomApple) current.Record = GamePlaying.CustomApple;
                 repos.PlayerRep.Update(current);
-                MessageBoxResult msbox = MessageBox.Show("Do you want to try again?", "The game is over. ", MessageBoxButton.OKCancel);
-                if (msbox == MessageBoxResult.OK)
+                date = new DateTime(0);
+                currentCanvas.Children.Clear();
+                IsGameLoad = false;
+                start = new TextBox();
+
+                start.Focusable = true;
+                if (gamePlaying.GetType() == typeof(GamePlaying))
                 {
 
-                    //  gamePlaying.status = GameStatus.playing;
+                    gamePlaying = new GamePlaying(250, 5, 5, 40);
+                    CanvasLoadedCommand.Execute(currentCanvas);
+
+                }
+                else
+                {
+                    var fullpath = AppDomain.CurrentDomain.BaseDirectory;
+
+                    var dllPath = string.Empty;
+                    if (fullpath.Contains(@"MyPacMan\bin\Debug\"))
+                    {
+                        dllPath = fullpath.Replace(@"MyPacMan\bin\Debug\", @"MyPacMan\bin\Plugins");
+                    }
+                    else if (fullpath.Contains(@"MyPacMan\bin\Release\"))
+                    {
+                        dllPath = fullpath.Replace(@"MyPacMan\bin\Release\", @"MyPacMan\bin\Plugins");
+                    }
+
+
+                    DirectoryInfo info = new DirectoryInfo(dllPath);
+
+                    FileInfo[] files = info.GetFiles();
+                    List<Assembly> pluginAssemblies = new List<Assembly>();
+                    foreach (var file in files)
+                    {
+                        pluginAssemblies.Add(Assembly.LoadFrom(file.FullName));
+                    }
+
+                    foreach (var p in pluginAssemblies)
+                    {
+
+                        foreach (var plugin in p.GetTypes())
+                        {
+                            if (plugin.BaseType != null && gamePlaying.GetType().FullName == plugin.FullName)
+
+                                gamePlaying = (IGamePlaying)Activator.CreateInstance(plugin);
+                            logger.Info("Additional plugin was loaded");
+                        }
+                    }
+
                     currentCanvas.Children.Clear();
                     IsGameLoad = false;
-                    start = new TextBox();
-                    
-                    start.Focusable = true;
-                    if (gamePlaying.GetType() == typeof(GamePlaying))
+
+                    CanvasLoadedCommand.Execute(currentCanvas);
+                }
+
+                PlayCommand.Execute(new object());
+
+            }
+            else
+            {
+                thread.Abort();
+                timer.Stop();
+                if (current.Record < GamePlaying.CustomApple) current.Record = GamePlaying.CustomApple;
+                repos.PlayerRep.Update(current);
+
+                if (lifesCount == 0)
+                {
+                    this.timer2.Stop();
+                    date = new DateTime(0);
+
+
+
+                    lifesCount = 3;
+                    MessageBoxResult msbox = MessageBox.Show("Do you want to try again?", "The game is over. ", MessageBoxButton.OKCancel);
+                    if (msbox == MessageBoxResult.OK)
                     {
-                        
-                        gamePlaying = new GamePlaying(250, 5, 5, 40);
-                        CanvasLoadedCommand.Execute(currentCanvas);
-                      
-                       
+                        currentCanvas.Children.Clear();
+                        IsGameLoad = false;
+                        start = new TextBox();
+
+                        start.Focusable = true;
+                        if (gamePlaying.GetType() == typeof(GamePlaying))
+                        {
+
+                            gamePlaying = new GamePlaying(250, 5, 5, 40);
+                            CanvasLoadedCommand.Execute(currentCanvas);
+
+                        }
+                        else
+                        {
+                            var fullpath = AppDomain.CurrentDomain.BaseDirectory;
+
+                            var dllPath = string.Empty;
+                            if (fullpath.Contains(@"MyPacMan\bin\Debug\"))
+                            {
+                                dllPath = fullpath.Replace(@"MyPacMan\bin\Debug\", @"MyPacMan\bin\Plugins");
+                            }
+                            else if (fullpath.Contains(@"MyPacMan\bin\Release\"))
+                            {
+                                dllPath = fullpath.Replace(@"MyPacMan\bin\Release\", @"MyPacMan\bin\Plugins");
+                            }
+
+
+                            DirectoryInfo info = new DirectoryInfo(dllPath);
+
+                            FileInfo[] files = info.GetFiles();
+                            List<Assembly> pluginAssemblies = new List<Assembly>();
+                            foreach (var file in files)
+                            {
+                                pluginAssemblies.Add(Assembly.LoadFrom(file.FullName));
+                            }
+
+                            foreach (var p in pluginAssemblies)
+                            {
+
+                                foreach (var plugin in p.GetTypes())
+                                {
+                                    if (plugin.BaseType != null && gamePlaying.GetType().FullName == plugin.FullName)
+
+                                        gamePlaying = (IGamePlaying)Activator.CreateInstance(plugin);
+                                    logger.Info("Additional plugin was loaded");
+                                }
+                            }
+
+                            currentCanvas.Children.Clear();
+                            IsGameLoad = false;
+
+                            CanvasLoadedCommand.Execute(currentCanvas);
+
+                        }
+
+                        PlayCommand.Execute(new object());
+
                     }
                     else
                     {
-                        CheckHardGame.Execute(check);
+                        MessageBox.Show("Your Result:" + GamePlaying.CustomApple);
+                        GamePlaying.CustomApple = 0;
+                        currentCanvas.Children.Clear();
+                        IsGameLoad = false;
+                        start = new TextBox();
+
+                        start.Focusable = true;
+                        if (gamePlaying.GetType() == typeof(GamePlaying))
+                        {
+
+                            gamePlaying = new GamePlaying(250, 5, 5, 40);
+                            CanvasLoadedCommand.Execute(currentCanvas);
+
+                        }
+                        else
+                        {
+                            var fullpath = AppDomain.CurrentDomain.BaseDirectory;
+
+                            var dllPath = string.Empty;
+                            if (fullpath.Contains(@"MyPacMan\bin\Debug\"))
+                            {
+                                dllPath = fullpath.Replace(@"MyPacMan\bin\Debug\", @"MyPacMan\bin\Plugins");
+                            }
+                            else if (fullpath.Contains(@"MyPacMan\bin\Release\"))
+                            {
+                                dllPath = fullpath.Replace(@"MyPacMan\bin\Release\", @"MyPacMan\bin\Plugins");
+                            }
+
+
+                            DirectoryInfo info = new DirectoryInfo(dllPath);
+
+                            FileInfo[] files = info.GetFiles();
+                            List<Assembly> pluginAssemblies = new List<Assembly>();
+                            foreach (var file in files)
+                            {
+                                pluginAssemblies.Add(Assembly.LoadFrom(file.FullName));
+                            }
+
+                            foreach (var p in pluginAssemblies)
+                            {
+
+                                foreach (var plugin in p.GetTypes())
+                                {
+                                    if (plugin.BaseType != null && gamePlaying.GetType().FullName == plugin.FullName)
+
+                                        gamePlaying = (IGamePlaying)Activator.CreateInstance(plugin);
+                                    logger.Info("Additional plugin was loaded");
+                                }
+                            }
+
+                            currentCanvas.Children.Clear();
+                            IsGameLoad = false;
+
+                            CanvasLoadedCommand.Execute(currentCanvas);
+                        }
+
+                    }
+                }
+                else if (lifesCount > 0)
+                {
+                    lifesCount--;
+                    currentCanvas.Children.Clear();
+                    IsGameLoad = false;
+                    start = new TextBox();
+
+                    start.Focusable = true;
+                    if (gamePlaying.GetType() == typeof(GamePlaying))
+                    {
+
+                        gamePlaying = new GamePlaying(250, 5, 5, 40);
+                        CanvasLoadedCommand.Execute(currentCanvas);
+
+
+                    }
+                    else
+                    {
+                        var fullpath = AppDomain.CurrentDomain.BaseDirectory;
+
+                        var dllPath = string.Empty;
+                        if (fullpath.Contains(@"MyPacMan\bin\Debug\"))
+                        {
+                            dllPath = fullpath.Replace(@"MyPacMan\bin\Debug\", @"MyPacMan\bin\Plugins");
+                        }
+                        else if (fullpath.Contains(@"MyPacMan\bin\Release\"))
+                        {
+                            dllPath = fullpath.Replace(@"MyPacMan\bin\Release\", @"MyPacMan\bin\Plugins");
+                        }
+
+
+                        DirectoryInfo info = new DirectoryInfo(dllPath);
+
+                        FileInfo[] files = info.GetFiles();
+                        List<Assembly> pluginAssemblies = new List<Assembly>();
+                        foreach (var file in files)
+                        {
+                            pluginAssemblies.Add(Assembly.LoadFrom(file.FullName));
+                        }
+
+                        foreach (var p in pluginAssemblies)
+                        {
+
+                            foreach (var plugin in p.GetTypes())
+                            {
+                                if (plugin.BaseType != null && gamePlaying.GetType().FullName == plugin.FullName)
+
+                                    gamePlaying = (IGamePlaying)Activator.CreateInstance(plugin);
+                                logger.Info("Additional plugin was loaded");
+                            }
+                        }
+
+                        currentCanvas.Children.Clear();
+                        IsGameLoad = false;
+
+                        CanvasLoadedCommand.Execute(currentCanvas);
                     }
 
 
                     PlayCommand.Execute(new object());
 
-
-
-
-
                 }
-                else
-                {
-                    currentWindow.Close();
-                }
+
             }
 
 
@@ -416,20 +743,29 @@ namespace MyPacMan.ViewModels
         /// <param name="canvas"></param>
         public void DrawWall(MyCanvas canvas)
         {
-            int i = 1;
-            for (int x = 20; x < 200; x += 40)
-                for (int y = 20; y < 200; y += 40)
+            foreach (Wall wall in gamePlaying.Walls)
+            {
+
+                if (wall.CurrentImg.Source == null)
                 {
-                    Image img = new Image();
-                    img.Source = gamePlaying.Wall.Image.image;
-                    // img.Name = "img"+i;
+                    wall.CurrentImg.Source = wall.Image.image;
 
-                    MyCanvas.SetLeft(img, x);
-                    MyCanvas.SetTop(img, y);
+                    MyCanvas.SetLeft(wall.CurrentImg, wall.X);
+                    MyCanvas.SetTop(wall.CurrentImg, wall.Y);
 
-                    canvas.Children.Add(img);
-                    i++;
+                    canvas.Children.Add(wall.CurrentImg);
                 }
+                else
+                {
+                    wall.CurrentImg.Source = wall.Image.image;
+                    MyCanvas.SetLeft(wall.CurrentImg, wall.X);
+                    MyCanvas.SetTop(wall.CurrentImg, wall.Y);
+                }
+
+
+            }
+
+
 
         }
         /// <summary>
@@ -469,7 +805,7 @@ namespace MyPacMan.ViewModels
 
 
         }
-      
+
         public void Window_KeyDown(object sender)
         {
             if (Keyboard.IsKeyDown(Key.Left))

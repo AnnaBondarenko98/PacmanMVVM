@@ -1,0 +1,27 @@
+﻿<Window x:Class="MyPacMan.Views.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:MyPacMan"
+        xmlns:l="clr-namespace:Localizator;assembly=Localizator"
+
+        Title="Register" Height="228.307" Width="316.216">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
+        <l:LocalisationHelper x:Key="Helper"></l:LocalisationHelper>
+    </Window.Resources>
+    <Grid Margin="0,0,-6.667,-0.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="101*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name ="NameTextBox" Text="{Binding  Path=[Player.Name]}" HorizontalAlignment="Left" Height="26" Margin="54,91,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="210" Grid.ColumnSpan="2"/>
+        <Label  Name="CustomName" Content="{Binding Source={StaticResource Helper}, Path=[MainResources.CustomName]}" HorizontalAlignment="Left" Margin="0,60,0,0" VerticalAlignment="Top" Width="104" Grid.Column="1"/>
+        <Button Content="{Binding Source={StaticResource Helper}, Path=[MainResources.NewPlayerButton]}" x:Name="NewPlayerButton" Command="{Binding Path=NewPlayerCommand}"   CommandParameter="{Binding ElementName=NameTextBox }" Margin="101,134,111,28" Grid.ColumnSpan="2" />
+
+
+    </Grid>
+</Window>

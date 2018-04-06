@@ -18,20 +18,20 @@ using System.Windows.Shapes;
 
 namespace MyPacMan
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
+   
     public partial class MainWindow : Window
     {
-        ApplicationViewModel viewModel;
+        public static  ApplicationViewModel viewModel;
       
         public MainWindow()
         {
             Window window = this;
-            viewModel = new ApplicationViewModel(window);
+          
+
+           
             InitializeComponent();
+            viewModel = new ApplicationViewModel(window, MyMenu);
             DataContext = viewModel;
-            this.Canvas.Focus();
         
         }
 

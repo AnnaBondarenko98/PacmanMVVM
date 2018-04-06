@@ -154,3 +154,13 @@ E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\MyPacMan.csproj.GenerateResourc
 E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\MyPacMan.csproj.CoreCompileInputs.cache
 E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\MyPacMan.exe
 E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\MyPacMan.pdb
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\bin\Debug\ru\MyPacMan.resources.dll
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\bin\Debug\Localizator.dll
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\bin\Debug\Localizator.pdb
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\MyPacMan.MainResources.resources
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\MyPacMan.MainResources.ru.resources
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\ru\MyPacMan.resources.dll
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\Views\Register.g.cs
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\Views\Register.baml
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\Views\PluginPresenter.g.cs
+E:\GitHub\PacmanMVVM\MyPacMan\MyPacMan\obj\Debug\Views\PluginPresenter.baml

@@ -14,18 +14,23 @@ namespace Models
         private Image currentImage;
         private int y;
         private int x;
-        private int direct_x;
-        private int direct_y;
+        public  int direct_x;
+        public  int direct_y;
+        private int predirect_x;
+        private int predirect_y;
         static Random random;
+        private List<Wall> walls;
         private int sizeField;
+        private int counter;
         /// <summary>
         ///  Initialize a new instance of the <see cref="Enemey"/> class  with coordinates 
         /// </summary>
         /// <param name="sizeField"></param>
         /// <param name="x"></param>
         /// <param name="y"></param>
-        public Enemey(int sizeField, int x, int y)
+        public Enemey(int sizeField, int x, int y, List<Wall> walls)
         {
+            this.walls = walls;
             CurrentImage = new Image();
             random = new Random();
             this.SizeField = sizeField;
@@ -104,21 +109,64 @@ namespace Models
         /// </summary>
         public void Run()
         {
+            if (Math.IEEERemainder(x, 20) == 0 && Math.IEEERemainder(y, 20) == 0)
+            {
+               
+                Turn();
+            }
+            foreach (var wall in walls)
+            {
+                    
+                    
+
+
+                if (
+                    (Math.Abs(y + Direct_y - wall.Y) < 20 && Math.Abs(x + Direct_x - wall.X) < 20))
+                    {
+
+
+                       
+                       TurnFromWall();
+                      
+                    break;
+
+                    }
+                
+            }
+
+           
+                
+
+
+            
+           
             x += Direct_x;
             y += Direct_y;
-            if (Math.IEEERemainder(x, 40) == 0 && Math.IEEERemainder(y, 40) == 0)
-            {
-                Turn();
+           
 
-            }
             Transparent();
+        }
+        public void TurnFromWall()   
+        {
+            
+      
+                    Direct_y = predirect_y;
+                    Direct_x = predirect_x;
+          
+
+
+            PutImg();
+
         }
         /// <summary>
         /// Turns the  <see cref="Models.Enemey" />
         /// </summary>
         public void Turn()
         {
-
+           
+            predirect_x =0- Direct_x;
+            predirect_y = 0-Direct_y;
+           
             if (random.Next(5000) < 2500)
             {
                 if (Direct_y == 0)

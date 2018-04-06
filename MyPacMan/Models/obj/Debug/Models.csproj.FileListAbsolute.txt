@@ -12,7 +12,6 @@ E:\GitHub\PacmanMVVM\MyPacMan\Models\bin\Debug\Models.dll
 E:\GitHub\PacmanMVVM\MyPacMan\Models\bin\Debug\Models.pdb
 E:\GitHub\PacmanMVVM\MyPacMan\Models\bin\Debug\NLog.dll
 E:\GitHub\PacmanMVVM\MyPacMan\Models\bin\Debug\NLog.xml
-E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.Properties.Resource1.resources
 E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.csproj.GenerateResource.Cache
 E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache

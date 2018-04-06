@@ -63,6 +63,8 @@
     <Compile Include="AppleImage.cs" />
     <Compile Include="EnemeyImage.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="GameStatus.cs" />
+    <Compile Include="Interfaces\IGamePlaying.cs" />
     <Compile Include="Interfaces\IRun.cs" />
     <Compile Include="Interfaces\ITransparent.cs" />
     <Compile Include="Interfaces\ITurn.cs" />

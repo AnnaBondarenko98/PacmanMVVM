@@ -24,14 +24,21 @@ namespace Models
         /// Gets or sets the X coordinate for <see cref="Models.WallImage" /> 
         /// </summary>
         public int Y { get => y; set => y = value; }
-       
-        private Image currentWall;
+
+        public Image CurrentImg { get; set; }
+
         /// <summary>
         /// Initialize a new instance of the <see cref="Wall"/> class with coordinates 
         /// </summary>
         public Wall()
         {
-           
+           CurrentImg= new Image();
+        }
+        public Wall(int x, int y)
+        {
+            this.X = x;
+            this.Y = y;
+            CurrentImg = new Image();
         }
     }
 }

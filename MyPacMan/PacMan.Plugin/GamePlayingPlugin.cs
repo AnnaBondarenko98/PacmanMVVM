@@ -20,6 +20,7 @@ namespace MyPacMan.Plugin
         private int speedGame;
         private List<Enemey> enemies;
         private List<Apple> apples;
+        private List<Wall> walls;
         private Wall wall;
         private int collectedApple;
         private PacMan pacman;
@@ -72,6 +73,30 @@ namespace MyPacMan.Plugin
         /// </summary>
         public int RandomParam2 { get => randomParam2; set => randomParam2 = value; }
 
+        public List<Wall> Walls { get => walls; set =>walls=value; }
+        public GamePlayingPlugin()
+        {
+            int sizeField = 250;
+            int amountEnemy = 10;
+            int amountApples = 10;
+            int speedGame = 25;
+            random = new Random();
+            this.SizeField = sizeField;
+            this.AmountEnemy = amountEnemy;
+            this.AmountApples = amountApples;
+            this.SpeedGame = speedGame;
+            Status = GameStatus.stopping;
+            enemies = new List<Enemey>();
+            apples = new List<Apple>();
+            walls = new List<Wall>();
+            Wall = new Wall();
+            Pacman = new PacMan(sizeField, Walls);
+            CreateWalls();
+            CreateApples();
+            CreateEnemies();
+
+
+        }
         /// <summary>
         /// 
         ///  Initialize new instance of the <see cref="MyPacMan.Plugin.GamePlayingPlugin" /> class
@@ -80,7 +105,7 @@ namespace MyPacMan.Plugin
         /// <param name="amountEnemy"></param>
         /// <param name="amountApples"></param>
         /// <param name="speedGame"></param>
-        public GamePlayingPlugin(int sizeField, int amountEnemy, int amountApples, int speedGame)
+        public GamePlayingPlugin(int sizeField = 250, int amountEnemy = 10, int amountApples = 10, int speedGame = 25)
         {
             random = new Random();
             this.SizeField = sizeField;
@@ -90,12 +115,40 @@ namespace MyPacMan.Plugin
             Status = GameStatus.stopping;
             enemies = new List<Enemey>();
             apples = new List<Apple>();
+            walls = new List<Wall>();
             Wall = new Wall();
-            Pacman = new PacMan(sizeField);
-
+            Pacman = new PacMan(sizeField, Walls);
+            CreateWalls();
             CreateApples();
             CreateEnemies();
 
+
+        }
+        /// <summary>
+        /// Creates a List of  <see cref="Models.Wall" /> 
+        /// </summary>
+        public void CreateWalls()
+        {
+            int x, y;
+            bool flag = true;
+            while (walls.Count < 20)
+            {
+                flag = true;
+                x = random.Next(1, 10) * 20;
+                y = random.Next(1, 10) * 20;
+                foreach (Wall en in walls)
+                {
+
+                    if (en.X == x && en.Y == y)
+                    { flag = false; break; }
+
+
+                }
+                if (flag)
+                {
+                    walls.Add(new Wall(x, y));
+                }
+            }
 
         }
         /// <summary>
@@ -107,21 +160,33 @@ namespace MyPacMan.Plugin
             bool flag = true;
             while (apples.Count < AmountApples)
             {
+                flag = true;
                 x = random.Next(RandomParam1) * 40;
                 y = random.Next(RandomParam1) * 40;
-                foreach (Apple en in apples)
+                foreach (var wall in walls)
                 {
-                    flag = true;
-                    if (en.X == x && en.Y == y)
+                    if (((Math.Abs(wall.X - x) < 18) && (Math.Abs(wall.Y - y) < 18)))
                         flag = false;
-                    
-                    break;
+                    foreach (Apple en in apples)
+                    {
+
+                        // if ((en.X == x && en.Y == y) || (wall.X == x && wall.Y == y))
+                        if ((Math.Abs(en.Y - y) < 18 && Math.Abs(en.X - x) < 18))
+                            flag = false;
+
+
+
+                    }
+
+
                 }
                 if (flag)
                 {
                     apples.Add(new Apple(x, y));
+                
                 }
             }
+        
         }
         /// <summary>
         /// Creates a List of  <see cref="Models.Apple" /> 
@@ -132,20 +197,32 @@ namespace MyPacMan.Plugin
             bool flag = true;
             while (enemies.Count < AmountEnemy)
             {
+                flag = true;
                 x = random.Next(RandomParam1) * 40;
                 y = random.Next(RandomParam2) * 40;
-                foreach (Enemey en in enemies)
+                foreach (var wall in walls)
                 {
-                    flag = true;
-                    
-                    if ((en.X == x && en.Y == y))
+                    if (((Math.Abs(wall.X - x) < 18) && (Math.Abs(wall.Y - y) < 18)))
                         flag = false;
-                    break;
+
+                    foreach (Enemey en in enemies)
+                    {
+                        //if ((en.X == x && en.Y == y) |( wall.X == x && wall.Y == y))
+                        if ((Math.Abs(en.Y - y) < 18 && Math.Abs(en.X - x) < 18))
+                            flag = false;
+
+
+
+                    }
+
+
                 }
                 if (flag)
                 {
-                    enemies.Add(new Enemey(SizeField, x, y));
+                    enemies.Add(new Enemey(SizeField, x, y, Walls));
+                   
                 }
+                
             }
         }
         /// <summary>
@@ -153,6 +230,7 @@ namespace MyPacMan.Plugin
         /// </summary>
         public void Play()
         {
+
 
             while (Status == GameStatus.playing)
             {
@@ -162,14 +240,16 @@ namespace MyPacMan.Plugin
                 {
                     enemey.Run();
                 }
+
                 for (int i = 0; i < enemies.Count; i++)
                 {
                     if (
                         (Math.Abs(enemies[i].X - pacman.X) <= 10 && (enemies[i].Y == pacman.Y))
                         || (Math.Abs(enemies[i].Y - pacman.Y) <= 10 && (enemies[i].X == pacman.X))
-                         || (Math.Abs(enemies[i].Y - pacman.Y) <= 10 && (Math.Abs(enemies[i].X - pacman.X) <= 10)))
+                        || (Math.Abs(enemies[i].Y - pacman.Y) <= 10 && (Math.Abs(enemies[i].X - pacman.X) <= 10)))
                     {
                         Status = GameStatus.looser;
+                      
 
                     }
 
@@ -178,14 +258,14 @@ namespace MyPacMan.Plugin
                 for (int i = 0; i < apples.Count; i++)
                 {
 
-                    if (Math.Abs(pacman.X - apples[i].X) < 3 && Math.Abs(pacman.Y - apples[i].Y) < 3)
+                    if (Math.Abs(pacman.X - apples[i].X) < 10 && Math.Abs(pacman.Y - apples[i].Y) < 10)
                     {
 
                         apples[i].Flag = true;
 
                         if (apples[i].Flag == true) ++CollectedApple1;
                     }
-                    if (CollectedApple1 == 10) Status = GameStatus.winner;
+                    if (CollectedApple1 == 5) { Status = GameStatus.winner;  }
                 }
 
 

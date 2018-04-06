@@ -54,14 +54,9 @@
       <Project>{82464240-518D-46F9-9676-D197AAE70DC1}</Project>
       <Name>Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MyPacMan.BLL\LogicLayer.csproj">
-      <Project>{06C4704C-4664-475E-8747-87FE63294CFF}</Project>
-      <Name>LogicLayer</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetDir)$(TargetName).dll" "$(SolutionDir)Plugins\$(TargetName).dll"
-</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\MyPacMan\bin\Plugins\$(TargetName).dll"</PostBuildEvent>
   </PropertyGroup>
 </Project>

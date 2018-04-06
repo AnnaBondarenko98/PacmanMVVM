@@ -20,14 +20,16 @@ namespace Models
         private int nextdirect_y;
         private int sizeField;
         private Image currentPacman;
+        private List<Wall> walls;
         private static Logger logger = LogManager.GetCurrentClassLogger();
         private static Logger updateLogger = LogManager.GetLogger("UpdateLogger");
         /// <summary>
         ///  Initialize a new instance of the <see cref="PacMan"/> 
         /// </summary>
         /// <param name="sizeField"></param>
-        public PacMan(int sizeField)
+        public PacMan(int sizeField,List<Wall> walls)
         {
+            this.walls = walls;
             this.direct_x = 0;
             this.direct_y = 0;
             this.x = 120; 
@@ -35,6 +37,7 @@ namespace Models
             this.SizeField = sizeField;
             currentPacman = new System.Windows.Controls.Image();
             PutImg();
+
 
 
 
@@ -113,13 +116,30 @@ namespace Models
         /// </summary>
         public void Run()
         {
+            Turn();
+           
+            
+            foreach (var wall in walls)
+            {
+                
+                if (
+                    (Math.Abs(y+Nextdirect_y - wall.Y) < 18 && Math.Abs(x+Nextdirect_x - wall.X) < 18))
+                {
+
+                    
+                    Nextdirect_x = 0;
+                    Nextdirect_y = 0;
+                    Turn();
+
+                }
+
+               
+
+            }
             x += Direct_x;
             y += Direct_y;
-            if (Math.IEEERemainder(x, 40) == 0 && Math.IEEERemainder(y, 40) == 0)
-            {
-                Turn();
-                
-            }
+
+
             Transparent();
         }
         /// <summary>
@@ -149,9 +169,16 @@ namespace Models
         /// </summary>
         public void Turn()
         {
-            Direct_x = Nextdirect_x;
-            Direct_y = Nextdirect_y;
-            PutImg();
+         
+                
+                    Direct_x = Nextdirect_x;
+                    Direct_y = Nextdirect_y;
+                    
+                
+              
+                PutImg();
+            
+           
 
         }
         /// <summary>

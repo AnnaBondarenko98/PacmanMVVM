@@ -13,22 +13,35 @@ namespace MyPacMan.BLL
 {
     public class GamePlaying : IGamePlaying
     {
-         Random random;
+        Random random;
         private int sizeField;
         private int amountEnemy;
         private int amountApples;
         private int speedGame;
         private List<Enemey> enemies;
         private List<Apple> apples;
+        private List<Wall> walls;
         private Wall wall;
         private int collectedApple;
         private PacMan pacman;
-        private int  randomParam1;
-        private int randomParam2 ;
+        private int randomParam1;
+        private int randomParam2;
+        private static int customApple;
+
+        private const int WallsAmount = 20;
+        private const int GenerateConst = 40;
+        private const int CollapseConst = 18;
+        private const int PacmanCollapse = 10;
+
         private static Logger logger = LogManager.GetCurrentClassLogger();
         private static Logger updateLogger = LogManager.GetLogger("UpdateLogger");
 
+        public static int CustomApple { get => customApple; set => customApple = value; }
         private GameStatus status;
+        /// <summary>
+        /// Returns or sets array of <see cref="Models.Wall" /> for game
+        /// </summary>
+        public List<Wall> Walls { get => walls; set => walls = value; }
         /// <summary>
         /// Returns or sets array of <see cref="Models.Enemey" /> for game
         /// </summary>
@@ -78,7 +91,29 @@ namespace MyPacMan.BLL
         /// Random's parameter for Y coordinate
         /// </summary>
         public int RandomParam2 { get => randomParam2; set => randomParam2 = value; }
+        public GamePlaying()
+        {
+            int sizeField = 250;
+            int amountEnemy = 5;
+            int amountApples = 5;
+            int speedGame = 20;
+            random = new Random();
+            this.SizeField = sizeField;
+            this.AmountEnemy = amountEnemy;
+            this.AmountApples = amountApples;
+            this.SpeedGame = speedGame;
+            Status = GameStatus.stopping;
+            enemies = new List<Enemey>();
+            apples = new List<Apple>();
+            walls = new List<Wall>();
+            Wall = new Wall();
+            Pacman = new PacMan(sizeField, Walls);
+            CreateWalls();
+            CreateApples();
+            CreateEnemies();
 
+
+        }
         /// <summary>
         ///  Initialize new instance of the <see cref="GamePlaying" /> class
         /// </summary>
@@ -86,7 +121,7 @@ namespace MyPacMan.BLL
         /// <param name="amountEnemy"></param>
         /// <param name="amountApples"></param>
         /// <param name="speedGame"></param>
-        public GamePlaying(int sizeField, int amountEnemy, int amountApples, int speedGame)
+        public GamePlaying(int sizeField = 250, int amountEnemy = 5, int amountApples = 5, int speedGame = 40)
         {
             random = new Random();
             this.SizeField = sizeField;
@@ -97,14 +132,45 @@ namespace MyPacMan.BLL
             enemies = new List<Enemey>();
             apples = new List<Apple>();
             Wall = new Wall();
-            Pacman = new PacMan(sizeField);
+            walls = new List<Wall>();
+
             randomParam1 = 6;
-            randomParam2=5;
+            randomParam2 = 5;
+            CreateWalls();
+            Pacman = new PacMan(sizeField, Walls);
             CreateApples();
             CreateEnemies();
-            
 
 
+
+        }
+        /// <summary>
+        /// Creates a List of  <see cref="Models.Wall" /> 
+        /// </summary>
+        public void CreateWalls()
+        {
+            int x, y;
+            bool flag = true;
+            while (walls.Count < WallsAmount)
+            {
+                flag = true;
+                x = random.Next(1, 10) * WallsAmount;
+                y = random.Next(1, 10) * WallsAmount;
+                foreach (Wall en in walls)
+                {
+
+                    if (en.X == x && en.Y == y)
+                    { flag = false; break; }
+
+
+                }
+                if (flag)
+                {
+                    walls.Add(new Wall(x, y));
+                    logger.Info("One Wall was created ");
+                }
+            }
+            logger.Info("All Walls were created");
         }
         /// <summary>
         /// Creates a List of  <see cref="Models.Apple" /> 
@@ -115,15 +181,25 @@ namespace MyPacMan.BLL
             bool flag = true;
             while (apples.Count < AmountApples)
             {
-                x = random.Next(RandomParam1) * 40;
-                y = random.Next(RandomParam1) * 40;
-                foreach (Apple en in apples)
+                flag = true;
+                x = random.Next(RandomParam1) * GenerateConst;
+                y = random.Next(RandomParam1) * GenerateConst;
+                foreach (var wall in walls)
                 {
-                    flag = true;
-                    if (en.X == x && en.Y == y)
+                    if (((Math.Abs(wall.X - x) < CollapseConst) && (Math.Abs(wall.Y - y) < CollapseConst)))
                         flag = false;
-                   
-                    break;
+                    foreach (Apple en in apples)
+                    {
+
+                        // if ((en.X == x && en.Y == y) || (wall.X == x && wall.Y == y))
+                        if ((Math.Abs(en.Y - y) < CollapseConst && Math.Abs(en.X - x) < CollapseConst))
+                            flag = false;
+
+
+
+                    }
+
+
                 }
                 if (flag)
                 {
@@ -142,19 +218,29 @@ namespace MyPacMan.BLL
             bool flag = true;
             while (enemies.Count < AmountEnemy)
             {
-                x = random.Next(RandomParam1) * 40;
-                y = random.Next(RandomParam2) * 40;
-                foreach (Enemey en in enemies)
+                flag = true;
+                x = random.Next(RandomParam1) * GenerateConst;
+                y = random.Next(RandomParam2) * GenerateConst;
+                foreach (var wall in walls)
                 {
-                    flag = true;
-                    if ((en.X == x && en.Y == y))
+                    if (((Math.Abs(wall.X - x) < CollapseConst) && (Math.Abs(wall.Y - y) < CollapseConst)))
                         flag = false;
-                    
-                    break;
+
+                    foreach (Enemey en in enemies)
+                    {
+                        //if ((en.X == x && en.Y == y) |( wall.X == x && wall.Y == y))
+                        if ((Math.Abs(en.Y - y) < CollapseConst && Math.Abs(en.X - x) < CollapseConst))
+                            flag = false;
+
+
+
+                    }
+
+
                 }
                 if (flag)
                 {
-                    enemies.Add(new Enemey(SizeField, x, y));
+                    enemies.Add(new Enemey(SizeField, x, y, Walls));
                     logger.Info("One Enemey was created ");
                 }
                 logger.Info("All Enemies were created");
@@ -174,16 +260,18 @@ namespace MyPacMan.BLL
                 {
                     enemey.Run();
                 }
-               
+
                 for (int i = 0; i < enemies.Count; i++)
                 {
                     if (
-                        (Math.Abs(enemies[i].X - pacman.X) <= 10 && (enemies[i].Y == pacman.Y))
-                        || (Math.Abs(enemies[i].Y - pacman.Y) <= 10 && (enemies[i].X == pacman.X))
-                         || (Math.Abs(enemies[i].Y - pacman.Y) <= 10 && (Math.Abs(enemies[i].X - pacman.X) <= 10)))
+                        (Math.Abs(enemies[i].X - pacman.X) <= PacmanCollapse && (enemies[i].Y == pacman.Y))
+                        || (Math.Abs(enemies[i].Y - pacman.Y) <= PacmanCollapse && (enemies[i].X == pacman.X))
+                         || (Math.Abs(enemies[i].Y - pacman.Y) <= PacmanCollapse && (Math.Abs(enemies[i].X - pacman.X) <= PacmanCollapse)))
                     {
                         Status = GameStatus.looser;
-                        logger.Info("The game is over.The player are looser.");
+
+                        logger.Info("The game is over.The player is looser.");
+
 
                     }
 
@@ -192,22 +280,26 @@ namespace MyPacMan.BLL
                 for (int i = 0; i < apples.Count; i++)
                 {
 
-                    if (Math.Abs(pacman.X - apples[i].X) < 3 && Math.Abs(pacman.Y - apples[i].Y) < 3)
+                    if (Math.Abs(pacman.X - apples[i].X) < PacmanCollapse && Math.Abs(pacman.Y - apples[i].Y) < PacmanCollapse)
                     {
 
                         apples[i].Flag = true;
 
-                        if (apples[i].Flag == true) ++CollectedApple1;
+                        if (apples[i].Flag == true)
+                        {
+                            ++CollectedApple1;
+                            customApple++;
+                        }
                     }
-                    if (CollectedApple1 == 5) { Status = GameStatus.winner; logger.Info("The game is over.The player are winner."); }
+                    if (CollectedApple1 == 5) { Status = GameStatus.winner; logger.Info("The player is winner."); }
                 }
-               
+
 
 
 
             }
         }
 
-      
+
     }
 }

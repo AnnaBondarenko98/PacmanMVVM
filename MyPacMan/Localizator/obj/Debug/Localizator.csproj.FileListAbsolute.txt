@@ -1,0 +1,6 @@
+E:\GitHub\PacmanMVVM\MyPacMan\Localizator\bin\Debug\Localizator.dll
+E:\GitHub\PacmanMVVM\MyPacMan\Localizator\bin\Debug\Localizator.pdb
+E:\GitHub\PacmanMVVM\MyPacMan\Localizator\obj\Debug\Localizator.csprojResolveAssemblyReference.cache
+E:\GitHub\PacmanMVVM\MyPacMan\Localizator\obj\Debug\Localizator.csproj.CoreCompileInputs.cache
+E:\GitHub\PacmanMVVM\MyPacMan\Localizator\obj\Debug\Localizator.dll
+E:\GitHub\PacmanMVVM\MyPacMan\Localizator\obj\Debug\Localizator.pdb

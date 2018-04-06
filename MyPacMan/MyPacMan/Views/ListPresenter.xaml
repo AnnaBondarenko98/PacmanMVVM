@@ -12,7 +12,7 @@
                   Grid.Row="2">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">Name</GridViewColumn>
+                    <GridViewColumn  DisplayMemberBinding="{Binding Path=Name, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">Name</GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Record, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">Record</GridViewColumn>
                 </GridView>
             </ListView.View>
