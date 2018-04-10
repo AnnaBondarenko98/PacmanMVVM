@@ -1,0 +1,580 @@
+2018-04-09 09:31:46.7271 INFO One Wall was created 
+2018-04-09 09:31:46.7607 INFO One Wall was created 
+2018-04-09 09:31:46.7607 INFO One Wall was created 
+2018-04-09 09:31:46.7607 INFO One Wall was created 
+2018-04-09 09:31:46.7607 INFO One Wall was created 
+2018-04-09 09:31:46.7607 INFO One Wall was created 
+2018-04-09 09:31:46.7607 INFO One Wall was created 
+2018-04-09 09:31:46.7607 INFO One Wall was created 
+2018-04-09 09:31:46.7607 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO One Wall was created 
+2018-04-09 09:31:46.7677 INFO All Walls were created
+2018-04-09 09:31:46.7677 INFO One Apple was created 
+2018-04-09 09:31:46.7677 INFO One Apple was created 
+2018-04-09 09:31:46.7677 INFO One Apple was created 
+2018-04-09 09:31:46.7677 INFO One Apple was created 
+2018-04-09 09:31:46.7837 INFO One Apple was created 
+2018-04-09 09:31:46.7837 INFO All Apples were created
+2018-04-09 09:31:46.7837 INFO One Enemey was created 
+2018-04-09 09:31:46.7837 INFO All Enemies were created
+2018-04-09 09:31:46.7837 INFO One Enemey was created 
+2018-04-09 09:31:46.7837 INFO All Enemies were created
+2018-04-09 09:31:46.7837 INFO One Enemey was created 
+2018-04-09 09:31:46.7837 INFO All Enemies were created
+2018-04-09 09:31:46.7837 INFO One Enemey was created 
+2018-04-09 09:31:46.7837 INFO All Enemies were created
+2018-04-09 09:31:46.7837 INFO All Enemies were created
+2018-04-09 09:31:46.7837 INFO All Enemies were created
+2018-04-09 09:31:46.7837 INFO All Enemies were created
+2018-04-09 09:31:46.7837 INFO All Enemies were created
+2018-04-09 09:31:46.8000 INFO One Enemey was created 
+2018-04-09 09:31:46.8000 INFO All Enemies were created
+2018-04-09 09:31:46.8000 INFO Try find the Player by id
+2018-04-09 09:32:00.7468 INFO Try to find player  by predicate.
+2018-04-09 09:32:00.8617 INFO Try to find player  by predicate.
+2018-04-09 09:32:00.8817 INFO Try to find player  by predicate.
+2018-04-09 09:32:27.5043 INFO Try find all Players by id
+2018-04-09 09:32:40.0910 INFO The game is being launched
+2018-04-09 09:32:40.0970 INFO Start Game in the method Play()
+2018-04-09 09:33:10.7605 INFO The game is over.The player is looser.
+2018-04-09 09:33:10.7886 INFO Try to update the Player
+2018-04-09 09:33:10.9540 INFO Player was updated
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2414 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO One Wall was created 
+2018-04-09 09:33:19.2524 INFO All Walls were created
+2018-04-09 09:33:19.2685 INFO One Apple was created 
+2018-04-09 09:33:19.2685 INFO One Apple was created 
+2018-04-09 09:33:19.2685 INFO One Apple was created 
+2018-04-09 09:33:19.2685 INFO One Apple was created 
+2018-04-09 09:33:19.2685 INFO One Apple was created 
+2018-04-09 09:33:19.2685 INFO All Apples were created
+2018-04-09 09:33:19.2685 INFO One Enemey was created 
+2018-04-09 09:33:19.2685 INFO All Enemies were created
+2018-04-09 09:33:19.2685 INFO All Enemies were created
+2018-04-09 09:33:19.2685 INFO One Enemey was created 
+2018-04-09 09:33:19.2685 INFO All Enemies were created
+2018-04-09 09:33:19.2865 INFO One Enemey was created 
+2018-04-09 09:33:19.2865 INFO All Enemies were created
+2018-04-09 09:33:19.2865 INFO One Enemey was created 
+2018-04-09 09:33:19.2865 INFO All Enemies were created
+2018-04-09 09:33:19.2865 INFO All Enemies were created
+2018-04-09 09:33:19.2865 INFO All Enemies were created
+2018-04-09 09:33:19.2865 INFO One Enemey was created 
+2018-04-09 09:33:19.2865 INFO All Enemies were created
+2018-04-09 09:33:19.2865 INFO The game is being launched
+2018-04-09 09:33:19.2865 INFO Start Game in the method Play()
+2018-04-09 09:33:57.0247 INFO The game is over.The player is looser.
+2018-04-09 09:33:57.0573 INFO Try to update the Player
+2018-04-09 09:33:57.0722 INFO Player was updated
+2018-04-09 09:33:57.0722 INFO One Wall was created 
+2018-04-09 09:33:57.0722 INFO One Wall was created 
+2018-04-09 09:33:57.0722 INFO One Wall was created 
+2018-04-09 09:33:57.0722 INFO One Wall was created 
+2018-04-09 09:33:57.0722 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO One Wall was created 
+2018-04-09 09:33:57.0803 INFO All Walls were created
+2018-04-09 09:33:57.0976 INFO One Apple was created 
+2018-04-09 09:33:57.0976 INFO One Apple was created 
+2018-04-09 09:33:57.0976 INFO One Apple was created 
+2018-04-09 09:33:57.0976 INFO One Apple was created 
+2018-04-09 09:33:57.0976 INFO One Apple was created 
+2018-04-09 09:33:57.0976 INFO All Apples were created
+2018-04-09 09:33:57.0976 INFO All Enemies were created
+2018-04-09 09:33:57.0976 INFO One Enemey was created 
+2018-04-09 09:33:57.0976 INFO All Enemies were created
+2018-04-09 09:33:57.0976 INFO One Enemey was created 
+2018-04-09 09:33:57.0976 INFO All Enemies were created
+2018-04-09 09:33:57.1113 INFO One Enemey was created 
+2018-04-09 09:33:57.1113 INFO All Enemies were created
+2018-04-09 09:33:57.1113 INFO One Enemey was created 
+2018-04-09 09:33:57.1113 INFO All Enemies were created
+2018-04-09 09:33:57.1113 INFO One Enemey was created 
+2018-04-09 09:33:57.1113 INFO All Enemies were created
+2018-04-09 09:33:57.1113 INFO The game is being launched
+2018-04-09 09:33:57.1113 INFO Start Game in the method Play()
+2018-04-09 09:35:36.2318 INFO The game is over.The player is looser.
+2018-04-09 09:35:36.2509 INFO Try to update the Player
+2018-04-09 09:35:36.2840 INFO Player was updated
+2018-04-09 09:35:36.2840 INFO One Wall was created 
+2018-04-09 09:35:36.2840 INFO One Wall was created 
+2018-04-09 09:35:36.2840 INFO One Wall was created 
+2018-04-09 09:35:36.3020 INFO One Wall was created 
+2018-04-09 09:35:36.3020 INFO One Wall was created 
+2018-04-09 09:35:36.3020 INFO One Wall was created 
+2018-04-09 09:35:36.3020 INFO One Wall was created 
+2018-04-09 09:35:36.3020 INFO One Wall was created 
+2018-04-09 09:35:36.3211 INFO One Wall was created 
+2018-04-09 09:35:36.3211 INFO One Wall was created 
+2018-04-09 09:35:36.3211 INFO One Wall was created 
+2018-04-09 09:35:36.3211 INFO One Wall was created 
+2018-04-09 09:35:36.3311 INFO One Wall was created 
+2018-04-09 09:35:36.3582 INFO One Wall was created 
+2018-04-09 09:35:36.3582 INFO One Wall was created 
+2018-04-09 09:35:36.3612 INFO One Wall was created 
+2018-04-09 09:35:36.3612 INFO One Wall was created 
+2018-04-09 09:35:36.3612 INFO One Wall was created 
+2018-04-09 09:35:36.3612 INFO One Wall was created 
+2018-04-09 09:35:36.3612 INFO One Wall was created 
+2018-04-09 09:35:36.3612 INFO All Walls were created
+2018-04-09 09:35:36.3612 INFO One Apple was created 
+2018-04-09 09:35:36.3612 INFO One Apple was created 
+2018-04-09 09:35:36.3612 INFO One Apple was created 
+2018-04-09 09:35:36.3612 INFO One Apple was created 
+2018-04-09 09:35:36.3612 INFO One Apple was created 
+2018-04-09 09:35:36.3612 INFO All Apples were created
+2018-04-09 09:35:36.3612 INFO All Enemies were created
+2018-04-09 09:35:36.3612 INFO One Enemey was created 
+2018-04-09 09:35:36.3612 INFO All Enemies were created
+2018-04-09 09:35:36.3792 INFO One Enemey was created 
+2018-04-09 09:35:36.3792 INFO All Enemies were created
+2018-04-09 09:35:36.3792 INFO One Enemey was created 
+2018-04-09 09:35:36.3792 INFO All Enemies were created
+2018-04-09 09:35:36.3792 INFO All Enemies were created
+2018-04-09 09:35:36.3792 INFO One Enemey was created 
+2018-04-09 09:35:36.3792 INFO All Enemies were created
+2018-04-09 09:35:36.3792 INFO One Enemey was created 
+2018-04-09 09:35:36.3792 INFO All Enemies were created
+2018-04-09 09:35:36.3792 INFO The game is being launched
+2018-04-09 09:35:36.3933 INFO Start Game in the method Play()
+2018-04-09 09:35:37.1984 INFO The game is over.The player is looser.
+2018-04-09 09:35:37.2395 INFO Try to update the Player
+2018-04-09 09:35:37.2716 INFO Player was updated
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7387 INFO One Wall was created 
+2018-04-09 09:35:41.7529 INFO One Wall was created 
+2018-04-09 09:35:41.7529 INFO One Wall was created 
+2018-04-09 09:35:41.7529 INFO One Wall was created 
+2018-04-09 09:35:41.7529 INFO One Wall was created 
+2018-04-09 09:35:41.7529 INFO One Wall was created 
+2018-04-09 09:35:41.7529 INFO One Wall was created 
+2018-04-09 09:35:41.7529 INFO All Walls were created
+2018-04-09 09:35:41.7529 INFO One Apple was created 
+2018-04-09 09:35:41.7529 INFO One Apple was created 
+2018-04-09 09:35:41.7529 INFO One Apple was created 
+2018-04-09 09:35:41.7529 INFO One Apple was created 
+2018-04-09 09:35:41.7529 INFO One Apple was created 
+2018-04-09 09:35:41.7529 INFO All Apples were created
+2018-04-09 09:35:41.7529 INFO One Enemey was created 
+2018-04-09 09:35:41.7529 INFO All Enemies were created
+2018-04-09 09:35:41.7688 INFO One Enemey was created 
+2018-04-09 09:35:41.7688 INFO All Enemies were created
+2018-04-09 09:35:41.7688 INFO One Enemey was created 
+2018-04-09 09:35:41.7688 INFO All Enemies were created
+2018-04-09 09:35:41.7688 INFO All Enemies were created
+2018-04-09 09:35:41.7688 INFO One Enemey was created 
+2018-04-09 09:35:41.7688 INFO All Enemies were created
+2018-04-09 09:35:41.7688 INFO One Enemey was created 
+2018-04-09 09:35:41.7688 INFO All Enemies were created
+2018-04-09 09:35:41.7688 INFO The game is being launched
+2018-04-09 09:35:41.7838 INFO Start Game in the method Play()
+2018-04-09 09:35:49.0437 INFO The game is over.The player is looser.
+2018-04-09 09:35:49.0678 INFO Try to update the Player
+2018-04-09 09:35:49.0908 INFO Player was updated
+2018-04-09 09:35:49.0908 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.0959 INFO One Wall was created 
+2018-04-09 09:35:49.1129 INFO One Wall was created 
+2018-04-09 09:35:49.1129 INFO One Wall was created 
+2018-04-09 09:35:49.1129 INFO One Wall was created 
+2018-04-09 09:35:49.1129 INFO One Wall was created 
+2018-04-09 09:35:49.1129 INFO One Wall was created 
+2018-04-09 09:35:49.1129 INFO One Wall was created 
+2018-04-09 09:35:49.1129 INFO One Wall was created 
+2018-04-09 09:35:49.1129 INFO All Walls were created
+2018-04-09 09:35:49.1129 INFO One Apple was created 
+2018-04-09 09:35:49.1280 INFO One Apple was created 
+2018-04-09 09:35:49.1280 INFO One Apple was created 
+2018-04-09 09:35:49.1280 INFO One Apple was created 
+2018-04-09 09:35:49.1280 INFO One Apple was created 
+2018-04-09 09:35:49.1280 INFO All Apples were created
+2018-04-09 09:35:49.1280 INFO One Enemey was created 
+2018-04-09 09:35:49.1280 INFO All Enemies were created
+2018-04-09 09:35:49.1280 INFO One Enemey was created 
+2018-04-09 09:35:49.1280 INFO All Enemies were created
+2018-04-09 09:35:49.1462 INFO One Enemey was created 
+2018-04-09 09:35:49.1462 INFO All Enemies were created
+2018-04-09 09:35:49.1462 INFO One Enemey was created 
+2018-04-09 09:35:49.1462 INFO All Enemies were created
+2018-04-09 09:35:49.1462 INFO One Enemey was created 
+2018-04-09 09:35:49.1462 INFO All Enemies were created
+2018-04-09 09:35:49.1462 INFO The game is being launched
+2018-04-09 09:35:49.1590 INFO Start Game in the method Play()
+2018-04-09 09:36:31.7676 INFO The game was stopped
+2018-04-09 09:36:37.0105 INFO Additional plugin was loaded
+2018-04-09 09:36:39.0457 INFO The game is being launched
+2018-04-09 09:36:47.1737 INFO Try find all Players by id
+2018-04-09 09:36:49.0889 INFO Try to update the Player
+2018-04-09 09:36:49.1250 INFO Player was updated
+2018-04-09 09:36:49.1301 INFO Additional plugin was loaded
+2018-04-09 09:36:49.2103 INFO Additional plugin was loaded
+2018-04-09 09:36:49.2103 INFO The game is being launched
+2018-04-09 09:36:50.8114 INFO The game was stopped
+2018-04-09 09:36:53.7243 INFO Additional plugin was loaded
+2018-04-09 09:36:56.1097 INFO The game is being launched
+2018-04-09 09:36:58.8420 INFO Try to update the Player
+2018-04-09 09:36:58.8826 INFO Player was updated
+2018-04-09 09:36:58.9763 INFO Additional plugin was loaded
+2018-04-09 09:36:58.9763 INFO Additional plugin was loaded
+2018-04-09 09:36:58.9763 INFO The game is being launched
+2018-04-09 09:37:03.1839 INFO Try to update the Player
+2018-04-09 09:37:03.2199 INFO Player was updated
+2018-04-09 09:37:04.2161 INFO Additional plugin was loaded
+2018-04-09 09:37:04.2161 INFO Additional plugin was loaded
+2018-04-09 09:37:04.2161 INFO The game is being launched
+2018-04-09 09:37:13.1312 INFO Try to update the Player
+2018-04-09 09:37:13.1613 INFO Player was updated
+2018-04-09 09:37:13.2285 INFO Additional plugin was loaded
+2018-04-09 09:37:13.2285 INFO Additional plugin was loaded
+2018-04-09 09:37:13.2285 INFO The game is being launched
+2018-04-09 09:37:18.3013 INFO Try to update the Player
+2018-04-09 09:37:18.3359 INFO Player was updated
+2018-04-09 09:37:18.4407 INFO Additional plugin was loaded
+2018-04-09 09:37:18.4407 INFO Additional plugin was loaded
+2018-04-09 09:37:18.4407 INFO The game is being launched
+2018-04-09 09:37:27.5761 INFO Try to update the Player
+2018-04-09 09:37:27.6112 INFO Player was updated
+2018-04-09 09:37:27.6974 INFO Additional plugin was loaded
+2018-04-09 09:37:27.6974 INFO Additional plugin was loaded
+2018-04-09 09:37:27.6974 INFO The game is being launched
+2018-04-09 09:37:28.1192 INFO Try to update the Player
+2018-04-09 09:37:28.1526 INFO Player was updated
+2018-04-09 09:37:31.5288 INFO Additional plugin was loaded
+2018-04-09 09:37:31.5288 INFO Additional plugin was loaded
+2018-04-09 10:02:23.3339 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3672 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO One Wall was created 
+2018-04-09 10:02:23.3774 INFO All Walls were created
+2018-04-09 10:02:23.3934 INFO One Apple was created 
+2018-04-09 10:02:23.3934 INFO One Apple was created 
+2018-04-09 10:02:23.3934 INFO One Apple was created 
+2018-04-09 10:02:23.3934 INFO One Apple was created 
+2018-04-09 10:02:23.3934 INFO One Apple was created 
+2018-04-09 10:02:23.3934 INFO All Apples were created
+2018-04-09 10:02:23.3934 INFO All Enemies were created
+2018-04-09 10:02:23.3934 INFO One Enemey was created 
+2018-04-09 10:02:23.3934 INFO All Enemies were created
+2018-04-09 10:02:23.3934 INFO One Enemey was created 
+2018-04-09 10:02:23.3934 INFO All Enemies were created
+2018-04-09 10:02:23.4105 INFO One Enemey was created 
+2018-04-09 10:02:23.4105 INFO All Enemies were created
+2018-04-09 10:02:23.4105 INFO One Enemey was created 
+2018-04-09 10:02:23.4105 INFO All Enemies were created
+2018-04-09 10:02:23.4105 INFO One Enemey was created 
+2018-04-09 10:02:23.4105 INFO All Enemies were created
+2018-04-09 10:02:23.4105 INFO Try find the Player by id
+2018-04-09 10:02:37.8849 INFO Try to find player  by predicate.
+2018-04-09 10:02:37.9681 INFO Try to find player  by predicate.
+2018-04-09 10:02:37.9792 INFO Try to find player  by predicate.
+2018-04-09 10:02:43.7922 INFO The game is being launched
+2018-04-09 10:02:43.7922 INFO Start Game in the method Play()
+2018-04-09 10:02:51.5746 INFO The game is over.The player is looser.
+2018-04-09 10:02:51.6488 INFO Try to update the Player
+2018-04-09 10:02:51.8785 INFO Player was updated
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8785 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO One Wall was created 
+2018-04-09 10:02:51.8945 INFO All Walls were created
+2018-04-09 10:02:51.8945 INFO One Apple was created 
+2018-04-09 10:02:51.9085 INFO One Apple was created 
+2018-04-09 10:02:51.9085 INFO One Apple was created 
+2018-04-09 10:02:51.9085 INFO One Apple was created 
+2018-04-09 10:02:51.9085 INFO One Apple was created 
+2018-04-09 10:02:51.9085 INFO All Apples were created
+2018-04-09 10:02:51.9085 INFO One Enemey was created 
+2018-04-09 10:02:51.9085 INFO All Enemies were created
+2018-04-09 10:02:51.9085 INFO All Enemies were created
+2018-04-09 10:02:51.9085 INFO One Enemey was created 
+2018-04-09 10:02:51.9085 INFO All Enemies were created
+2018-04-09 10:02:51.9085 INFO One Enemey was created 
+2018-04-09 10:02:51.9085 INFO All Enemies were created
+2018-04-09 10:02:51.9085 INFO One Enemey was created 
+2018-04-09 10:02:51.9085 INFO All Enemies were created
+2018-04-09 10:02:51.9085 INFO One Enemey was created 
+2018-04-09 10:02:51.9085 INFO All Enemies were created
+2018-04-09 10:02:51.9246 INFO The game is being launched
+2018-04-09 10:02:51.9246 INFO Start Game in the method Play()
+2018-04-09 10:13:27.1939 INFO One Wall was created 
+2018-04-09 10:13:27.2561 INFO One Wall was created 
+2018-04-09 10:13:27.2561 INFO One Wall was created 
+2018-04-09 10:13:27.2561 INFO One Wall was created 
+2018-04-09 10:13:27.2561 INFO One Wall was created 
+2018-04-09 10:13:27.2561 INFO One Wall was created 
+2018-04-09 10:13:27.2561 INFO One Wall was created 
+2018-04-09 10:13:27.2561 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2685 INFO One Wall was created 
+2018-04-09 10:13:27.2832 INFO One Wall was created 
+2018-04-09 10:13:27.2832 INFO One Wall was created 
+2018-04-09 10:13:27.2832 INFO One Wall was created 
+2018-04-09 10:13:27.2832 INFO All Walls were created
+2018-04-09 10:13:27.2992 INFO One Apple was created 
+2018-04-09 10:13:27.2992 INFO One Apple was created 
+2018-04-09 10:13:27.2992 INFO One Apple was created 
+2018-04-09 10:13:27.2992 INFO One Apple was created 
+2018-04-09 10:13:27.2992 INFO One Apple was created 
+2018-04-09 10:13:27.2992 INFO All Apples were created
+2018-04-09 10:13:27.3193 INFO One Enemey was created 
+2018-04-09 10:13:27.3193 INFO All Enemies were created
+2018-04-09 10:13:27.3193 INFO One Enemey was created 
+2018-04-09 10:13:27.3193 INFO All Enemies were created
+2018-04-09 10:13:27.3193 INFO All Enemies were created
+2018-04-09 10:13:27.3193 INFO All Enemies were created
+2018-04-09 10:13:27.3193 INFO All Enemies were created
+2018-04-09 10:13:27.3193 INFO All Enemies were created
+2018-04-09 10:13:27.3313 INFO One Enemey was created 
+2018-04-09 10:13:27.3313 INFO All Enemies were created
+2018-04-09 10:13:27.3313 INFO One Enemey was created 
+2018-04-09 10:13:27.3313 INFO All Enemies were created
+2018-04-09 10:13:27.3313 INFO One Enemey was created 
+2018-04-09 10:13:27.3313 INFO All Enemies were created
+2018-04-09 10:13:27.3313 INFO Try find the Player by id
+2018-04-09 23:19:06.4866 INFO One Wall was created 
+2018-04-09 23:19:06.5488 INFO One Wall was created 
+2018-04-09 23:19:06.5488 INFO One Wall was created 
+2018-04-09 23:19:06.5488 INFO One Wall was created 
+2018-04-09 23:19:06.5488 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5558 INFO One Wall was created 
+2018-04-09 23:19:06.5708 INFO One Wall was created 
+2018-04-09 23:19:06.5708 INFO One Wall was created 
+2018-04-09 23:19:06.5708 INFO One Wall was created 
+2018-04-09 23:19:06.5708 INFO One Wall was created 
+2018-04-09 23:19:06.5708 INFO All Walls were created
+2018-04-09 23:19:06.5869 INFO One Apple was created 
+2018-04-09 23:19:06.5869 INFO One Apple was created 
+2018-04-09 23:19:06.5869 INFO One Apple was created 
+2018-04-09 23:19:06.5869 INFO One Apple was created 
+2018-04-09 23:19:06.5869 INFO One Apple was created 
+2018-04-09 23:19:06.5869 INFO All Apples were created
+2018-04-09 23:19:06.6019 INFO One Enemey was created 
+2018-04-09 23:19:06.6019 INFO All Enemies were created
+2018-04-09 23:19:06.6019 INFO One Enemey was created 
+2018-04-09 23:19:06.6019 INFO All Enemies were created
+2018-04-09 23:19:06.6019 INFO One Enemey was created 
+2018-04-09 23:19:06.6019 INFO All Enemies were created
+2018-04-09 23:19:06.6170 INFO One Enemey was created 
+2018-04-09 23:19:06.6170 INFO All Enemies were created
+2018-04-09 23:19:06.6170 INFO One Enemey was created 
+2018-04-09 23:19:06.6170 INFO All Enemies were created
+2018-04-09 23:19:06.6170 INFO Try find the Player by id
+2018-04-09 23:19:27.8233 INFO Try to find player  by predicate.
+2018-04-09 23:19:27.8885 INFO Try to find player  by predicate.
+2018-04-09 23:19:27.8885 INFO Try to find player  by predicate.
+2018-04-09 23:19:30.5376 INFO The game is being launched
+2018-04-09 23:19:30.5407 INFO Start Game in the method Play()
+2018-04-09 23:20:02.9341 INFO The game was stopped
+2018-04-09 23:20:06.5593 INFO Additional plugin was loaded
+2018-04-09 23:20:08.3834 INFO Additional plugin was loaded
+2018-04-09 23:20:10.0336 INFO The game is being launched
+2018-04-09 23:20:25.2535 INFO Try to update the Player
+2018-04-09 23:20:25.4099 INFO Player was updated
+2018-04-09 23:20:25.4319 INFO Additional plugin was loaded
+2018-04-09 23:20:25.4319 INFO Additional plugin was loaded
+2018-04-09 23:20:25.4319 INFO The game is being launched
+2018-04-09 23:20:30.5911 INFO Try to update the Player
+2018-04-09 23:20:30.6141 INFO Player was updated
+2018-04-09 23:20:30.6492 INFO Additional plugin was loaded
+2018-04-09 23:20:30.6492 INFO Additional plugin was loaded
+2018-04-09 23:20:30.6492 INFO The game is being launched
+2018-04-09 23:20:35.9711 INFO Try to update the Player
+2018-04-09 23:20:35.9971 INFO Player was updated
+2018-04-09 23:20:36.0231 INFO Additional plugin was loaded
+2018-04-09 23:20:36.0231 INFO Additional plugin was loaded
+2018-04-09 23:20:36.0231 INFO The game is being launched
+2018-04-09 23:21:15.8659 INFO Try to update the Player
+2018-04-09 23:21:15.8960 INFO Player was updated
+2018-04-09 23:21:15.9642 INFO Additional plugin was loaded
+2018-04-09 23:21:15.9642 INFO Additional plugin was loaded
+2018-04-09 23:21:15.9642 INFO The game is being launched
+2018-04-09 23:21:33.5926 INFO Try to update the Player
+2018-04-09 23:21:33.6307 INFO Player was updated
+2018-04-09 23:21:39.5733 INFO Additional plugin was loaded
+2018-04-09 23:21:39.5733 INFO Additional plugin was loaded
+2018-04-09 23:21:47.1033 INFO The game is being launched
+2018-04-09 23:21:48.3097 INFO The game was stopped
+2018-04-09 23:22:00.0389 INFO The game is being launched
+2018-04-09 23:22:02.3772 INFO The game was stopped
+2018-04-09 23:22:03.0945 INFO The game is being launched
+2018-04-09 23:22:06.2583 INFO The game was stopped
+2018-04-09 23:22:07.0764 INFO The game is being launched
+2018-04-09 23:22:09.4352 INFO The game was stopped
+2018-04-09 23:22:11.3447 INFO The game is being launched
+2018-04-09 23:22:26.9530 INFO Try to update the Player
+2018-04-09 23:22:26.9891 INFO Player was updated
+2018-04-09 23:22:27.0212 INFO Additional plugin was loaded
+2018-04-09 23:22:27.0212 INFO Additional plugin was loaded
+2018-04-09 23:22:27.0232 INFO The game is being launched
+2018-04-09 23:22:33.6685 INFO Try to update the Player
+2018-04-09 23:22:33.7026 INFO Player was updated
+2018-04-09 23:22:33.7447 INFO Additional plugin was loaded
+2018-04-09 23:22:33.7447 INFO Additional plugin was loaded
+2018-04-09 23:22:33.7447 INFO The game is being launched
+2018-04-09 23:22:37.3083 INFO Try to update the Player
+2018-04-09 23:22:37.3083 INFO Player was updated
+2018-04-09 23:22:37.3464 INFO Additional plugin was loaded
+2018-04-09 23:22:37.3464 INFO Additional plugin was loaded
+2018-04-09 23:22:37.3464 INFO The game is being launched
+2018-04-09 23:22:39.9001 INFO Try to update the Player
+2018-04-09 23:22:39.9172 INFO Player was updated
+2018-04-09 23:22:41.5731 INFO Additional plugin was loaded
+2018-04-09 23:22:41.5731 INFO Additional plugin was loaded
+2018-04-09 23:22:41.5731 INFO The game is being launched
+2018-04-09 23:22:45.9185 INFO Try to update the Player
+2018-04-09 23:22:45.9510 INFO Player was updated
+2018-04-09 23:22:45.9791 INFO Additional plugin was loaded
+2018-04-09 23:22:45.9791 INFO Additional plugin was loaded
+2018-04-09 23:22:45.9791 INFO The game is being launched
+2018-04-09 23:26:21.6672 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6873 INFO One Wall was created 
+2018-04-09 23:26:21.6953 INFO One Wall was created 
+2018-04-09 23:26:21.6953 INFO One Wall was created 
+2018-04-09 23:26:21.6953 INFO One Wall was created 
+2018-04-09 23:26:21.6953 INFO One Wall was created 
+2018-04-09 23:26:21.6953 INFO One Wall was created 
+2018-04-09 23:26:21.6953 INFO All Walls were created
+2018-04-09 23:26:21.6953 INFO One Apple was created 
+2018-04-09 23:26:21.6953 INFO One Apple was created 
+2018-04-09 23:26:21.6953 INFO One Apple was created 
+2018-04-09 23:26:21.6953 INFO One Apple was created 
+2018-04-09 23:26:21.6953 INFO One Apple was created 
+2018-04-09 23:26:21.6953 INFO All Apples were created
+2018-04-09 23:26:21.6953 INFO All Enemies were created
+2018-04-09 23:26:21.6953 INFO One Enemey was created 
+2018-04-09 23:26:21.6953 INFO All Enemies were created
+2018-04-09 23:26:21.6953 INFO All Enemies were created
+2018-04-09 23:26:21.6953 INFO One Enemey was created 
+2018-04-09 23:26:21.6953 INFO All Enemies were created
+2018-04-09 23:26:21.7113 INFO One Enemey was created 
+2018-04-09 23:26:21.7113 INFO All Enemies were created
+2018-04-09 23:26:21.7113 INFO One Enemey was created 
+2018-04-09 23:26:21.7113 INFO All Enemies were created
+2018-04-09 23:26:21.7113 INFO One Enemey was created 
+2018-04-09 23:26:21.7113 INFO All Enemies were created
+2018-04-09 23:26:21.7113 INFO Try find the Player by id

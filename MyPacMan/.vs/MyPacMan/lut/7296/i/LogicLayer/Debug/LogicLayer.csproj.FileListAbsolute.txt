@@ -1,6 +1,0 @@
-C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.BLL\bin\Debug\MyPacMan.BLL.dll
-C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\b\MyPacMan.BLL\bin\Debug\MyPacMan.BLL.pdb
-C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\LogicLayer\Debug\LogicLayer.csprojResolveAssemblyReference.cache
-C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\LogicLayer\Debug\LogicLayer.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\LogicLayer\Debug\MyPacMan.BLL.dll
-C:\Users\User\source\repos\MyPacMan\.vs\MyPacMan\lut\0\i\LogicLayer\Debug\MyPacMan.BLL.pdb

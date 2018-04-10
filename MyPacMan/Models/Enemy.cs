@@ -117,15 +117,10 @@ namespace Models
             foreach (var wall in walls)
             {
                     
-                    
-
 
                 if (
                     (Math.Abs(y + Direct_y - wall.Y) < 20 && Math.Abs(x + Direct_x - wall.X) < 20))
-                    {
-
-
-                       
+                    {     
                        TurnFromWall();
                       
                     break;
@@ -134,12 +129,7 @@ namespace Models
                 
             }
 
-           
-                
 
-
-            
-           
             x += Direct_x;
             y += Direct_y;
            

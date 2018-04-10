@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPacMan", "MyPacMan\MyPacMan.csproj", "{8FD8A210-6D8A-4741-9F99-09F9B81B2BF2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5892A136-FAF4-4FAD-A043-0CC727CAFB07} = {5892A136-FAF4-4FAD-A043-0CC727CAFB07}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "Library\DataLayer.csproj", "{D9E96D6E-67DE-4D8A-990E-203E11D0AAD0}"
 EndProject

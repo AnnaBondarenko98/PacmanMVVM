@@ -28,14 +28,17 @@ namespace MyPacMan.BLL
         private int randomParam2;
         private static int customApple;
 
-        private const int WallsAmount = 20;
+        public const int WallsAmount = 20;
         private const int GenerateConst = 40;
         private const int CollapseConst = 18;
         private const int PacmanCollapse = 10;
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
         private static Logger updateLogger = LogManager.GetLogger("UpdateLogger");
-
+        /// <summary>
+        /// Returns or sets a amount of walls for game
+        /// </summary>
+        public int AmountWalls { get => WallsAmount; }
         public static int CustomApple { get => customApple; set => customApple = value; }
         private GameStatus status;
         /// <summary>
@@ -121,7 +124,7 @@ namespace MyPacMan.BLL
         /// <param name="amountEnemy"></param>
         /// <param name="amountApples"></param>
         /// <param name="speedGame"></param>
-        public GamePlaying(int sizeField = 250, int amountEnemy = 5, int amountApples = 5, int speedGame = 40)
+        public GamePlaying(int sizeField , int amountEnemy , int amountApples , int speedGame )
         {
             random = new Random();
             this.SizeField = sizeField;

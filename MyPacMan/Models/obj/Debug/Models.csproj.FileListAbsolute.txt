@@ -17,3 +17,4 @@ E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.csproj.GenerateResource.Ca
 E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.dll
 E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.pdb
+E:\GitHub\PacmanMVVM\MyPacMan\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

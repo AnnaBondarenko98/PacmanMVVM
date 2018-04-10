@@ -11,20 +11,33 @@ using System.Collections;
 
 namespace MyPacMan.Test
 {
+   
     [TestClass]
     public class GamePlayingTest
     {
+        [TestMethod]
+        public void CreateWallsTest()
+        {
+            var mock = new Mock<GamePlaying>(250, 1, 1, 1);
+
+            mock.Object.CreateWalls();
+
+            Assert.AreEqual(20, mock.Object.Walls.Count);
+
+
+
+        }
         [TestMethod]
         public void CreateApplesTest()
         {
             var mock = new Mock<GamePlaying>(250,1,1,1);
             var mock2 = new Mock<List<Apple>>();
             mock.Object.Apples = mock2.Object;
-          
+            mock.Object.AmountApples = 1;
+            mock.Object.CreateEnemies();
 
-            mock.Object.CreateApples();
+            Assert.AreEqual(1, mock.Object.Enemies.Count);
 
-            Assert.AreEqual(1,mock.Object.Apples.Count);
 
 
 
@@ -36,6 +49,7 @@ namespace MyPacMan.Test
             var mock2 = new Mock<List<Apple>>();
             mock.Object.Apples = mock2.Object;
             mock.Object.AmountApples = 0;
+         
 
             mock.Object.CreateApples();
 
@@ -152,7 +166,7 @@ namespace MyPacMan.Test
             var mock = new Mock<GamePlaying>(250, 1, 1, 1);
             var pacmanmock = new Mock<PacMan>(250);
             var enemiesmock = new Mock<List<Enemey>>();
-            enemiesmock.Object.Add(new Enemey(250,10,10));
+            enemiesmock.Object.Add(new Enemey(250,10,10,new List<Wall>() {new Wall(1,2),new Wall(1,2) }));
             mock.Object.Pacman = pacmanmock.Object;
             mock.Object.Pacman.X = 5;
             mock.Object.Pacman.Y = 5;
